@@ -1,0 +1,297 @@
+/* -------------------------------------------------------------------------------------------------------
+MR SITE GENERATION 3 TEMPLATE - nav.css / repository file
+UNCOMPRESSED VERSION
+EDITED 23/4/2010
+Don't edit anything in this file.  As a part of the publish process, a copy of this file is included
+in all newer G3 templates.  As time progresses, we'll add more to this file.
+------------------------------------------------------------------------------------------------------- */
+body { margin: 0; padding: 0; }.clear {clear: both;height:0;overflow: hidden;}#mainheader_wrap { width: 850px; height: 150px;margin: 0 auto;padding: 0;overflow: hidden;
+}.tabclear {clear: both;margin: 0;padding: 0;height: 1 % ;}.hidden {display: none;margin: 0;padding: 0;}
+
+/*	STRICT BROWSER FIXES
+These settings help IE6+ display some of our widgets etc.  If you need to add more to the list,
+add them in here.  Don't remove them.
+------------------------------------------------------------------------------------------------------- */
+div#mainColumn,div#mainColumnTop,div#mainColumnBottom,div#pageContent,div#navColumn div.sitewidget,div#navColumn div#navbar,div#navColumn
+/*	BROWSER FIXES */			{overflow: hidden;display: inline - block;}
+body,html,div#homepage_wrap 		{padding: 0;margin: 0;}
+body,html {height: 100 % ;display: block;}
+
+/*	Global styles */
+.floatleft 						{display: block;float: left;margin: 10px 10px 10px 0;}
+.floatright 						{display: block;float: right;margin: 10px 0 10px 10px;}
+
+/*	What does this do? - After each module there is a clear div, 
+	in case you need 3 modules floating together, here, you can turn on or off the clear settings. 
+	They're hidden by default, but you can turn them on in the template settings (classes) */
+.module_clear 					{clear: both;height: 0;overflow: hidden;line - height: 0;font - size: 0;display: none;}
+
+/* -------------------------------------------------------------------------------------------------------
+MAIN HEADER SETTINGS
+Set up the dimensions for our main headers
+------------------------------------------------------------------------------------------------------- */
+/*	Mainheader - needs to be 850px x 150px */
+	div.mainHeader 				{width: 850px;height: 150px;margin: 0 auto;}
+
+/*	Outer module
+	Use this division for any banners / absolutely positioned outer elements 
+	Hidden by default, of course. */
+	div#outerModule 				{display: none;position: absolute;top: 0;right: 0;width: 100px;height: 100px;background: #000;}
+	
+	
+/*	Search results division, used for the Google / Froogle search box */
+	div#searchresults	{display:none;}	/* Hide search results div by default */
+	
+/*	WRAP CENTERING */
+	div#bodyWrapper,
+	div#topWrapperInner,
+	div#footerWrapperInner,
+	div#navigationWrapperTopInner,
+	div#navigationWrapperBottomInner,
+	div#headerWrapperInner,
+	div#ecomWrapperInner
+		{
+			/* Center the document, no widths here. Set widths in base.css */
+			margin-left:auto;
+			margin-right:auto;
+			margin:0 auto !important;
+		}
+
+/*	TABLE DEFAULTS */
+	table.modTable											
+		{
+			margin:0px; 
+			padding:0px;
+		}
+	table.modTable td										
+		{
+			vertical-align:middle;
+		}
+		
+	/* ------------------------------------------------------------ */
+	/* topModule */
+		div#topModule1	{display:none;}
+		div#topModule2	{display:none;}
+		div#topModule3	{display:none;}
+		div#topModule4	{display:none;}
+			div#HeaderLinks				{}
+				div#HeaderLinks ul {margin:0px; padding:0px;}
+					div#HeaderLinks ul li {list-style:none; display:inline;}
+					
+		div#topModule5	{display:none;}
+			div#SearchBox				{}
+	/* header and tabatha modules */
+	div#topModule6	{display:none;}
+	div#topModule7	{}
+		div#TabathaBlock
+			{
+				display:inline-block;
+				position:relative;
+				z-index:5;
+				top:0px;
+				left:0px;
+				width:100%;
+			}
+			div#TabathaBlock div.tabatha_wrap 				{float:left; display:block;}	/* Sets the horizontal menu's width, don't change */
+			div#TabathaBlock div#SearchBoxMenu 			{float:right; text-align:right;}
+			div#TabathaBlock div#SearchBoxMenu table td 		{vertical-align:top; padding:0px; margin:0px;}
+	div#topModule8	{display:none;}
+	/* /header and tabatha modules */
+	div#topModule9	{display:none;}
+		div#modBreadcrumb				{}
+			div#topModule9 div.content					{padding:0px;}
+			#topWrapper.modBreadcrumb	div#topModule9	{display:block;}
+	div#topModule10	{display:none;}
+	div#topModule11	{display:none;}
+	div#topModule12	{display:none;}
+		div#modSynopsis {}
+			#topWrapper.modSynopsis div#topModule12		{display:block;}
+	div#topModule13	{display:none;}
+	/* /topModule */
+
+	/* centerModule */
+	div#columnWrapper {}
+
+		/* ---------- ## LAYOUT SETTINGS ## ---------- */
+		/* pageSynopsis */
+		div#pageSynopsis										{display:none;}
+		/* bodyBreadcrumb */
+		div#bodyBreadcrumb									{display:none;}
+		div#bodyBreadcrumb span.BCspan,
+		div#modBreadcrumb span.BCspan							{display:block; float:left; padding:8px;}
+		div#bodyBreadcrumb a.BClink span.BCspan,
+		div#modBreadcrumb a.BClink span.BCspan				{cursor:pointer;}
+		/* pageSynopsis exception, position */
+		#bodyWrapper.bodySynopsis	div#pageSynopsis			{display:block;}
+		#bodyWrapper.bodyBreadcrumb	div#bodyBreadcrumb		{display:block;}
+		/* Layout variables */
+		div#navColumnTop										{}
+		div#navColumnBottom									{}
+		div#mainColumnTop									{}
+		div#mainColumnBottom									{}
+		/* Cater for lack of body class */
+		div#navColumn										{float:left;}
+		div#mainColumn										{float:right;}
+		/* Remember, no margins or paddings here */
+		body.expand div#mainColumn							{width:100%;}
+		body.expand div#navColumn								{display:none;}
+
+		/* body.menuleft */
+		body.menuleft div#navColumn							{float:left;}
+		body.menuleft div#mainColumn							{float:right;}
+		
+		/* body.menuright */
+		body.menuright div#navColumn							{float:right;}
+		body.menuright div#mainColumn							{float:left;}
+		/* ---------- ## /LAYOUT SETTINGS ## --------- */
+		
+	/* /centerModule */
+
+	/* footerModule */
+	div#footerModule1 {display:none;}
+	div#footerModule2 {display:none;}
+	div#footerModule3 {display:none;}
+	div#footerModule4 {display:none;}
+	div#footerModule5 {}
+		div#footer_wrap
+			{
+			
+			}
+			div#footer_wrap div#footer p
+				{
+					/* Remove our paragraph styles for this element */
+					margin:0px; 
+					padding:0px;
+				}
+	div#footerModule6 {display:none;}
+	div#footerModule7 {display:none;}
+	div#footerModule8 {display:none;}
+	div#footerModule9 {display:none;}
+	div#footerModule10 {display:none;}
+	/* /footerModule */
+	/* ------------------------------------------------------------ */
+	
+/* -------------------------------------------------------------------------------------------------------
+MODULAR PRESETS
+Setting the appropriate classes on the #topWrapper and #footerWrapper will change the layout
+of the top and bottom set of modules.
+------------------------------------------------------------------------------------------------------- */	
+div#topWrapper.two_col#topModule1,
+div#topWrapper.two_col#topModule2,
+div#topWrapper.two_col#topModule3,
+div#topWrapper.two_col#topModule4,
+div#footerWrapper.two_col#footerModule1,
+div#footerWrapper.two_col#footerModule2,
+div#footerWrapper.two_col#footerModule3,
+div#footerWrapper.two_col#footerModule4,
+div#footerWrapper.two_col#footerModule6,
+div#footerWrapper.two_col#footerModule7,
+div#footerWrapper.two_col#footerModule8,
+div#footerWrapper.two_col#footerModule9
+/*	Two columns */
+ {
+    float: left;
+    width: 50 % ;
+}
+div#topWrapper.two_col.topModule2_clear,
+div#topWrapper.two_col.topModule4_clear,
+div#footerWrapper.two_col.footerModule2_clear,
+div#footerWrapper.two_col.footerModule4_clear,
+div#footerWrapper.two_col.footerModule7_clear,
+div#footerWrapper.two_col.footerModule9_clear
+/*	Two column clear method */
+ {
+    display: block;
+}
+div#topWrapper.three_col#topModule1,
+div#topWrapper.three_col#topModule2,
+div#topWrapper.three_col#topModule3,
+div#footerWrapper.three_col#footerModule1,
+div#footerWrapper.three_col#footerModule2,
+div#footerWrapper.three_col#footerModule3,
+div#footerWrapper.three_col#footerModule6,
+div#footerWrapper.three_col#footerModule7,
+div#footerWrapper.three_col#footerModule8
+/*	Three columns */
+ {
+    float: left;
+}
+div#topWrapper.three_col.topModule3_clear,
+div#topWrapper.three_col.topModule6_clear,
+div#footerWrapper.three_col.footerModule3_clear,
+div#footerWrapper.three_col.footerModule8_clear
+/*	Three column clear method */
+ {
+    display: block;
+}
+div#topWrapper.four_col#topModule1,
+div#topWrapper.four_col#topModule2,
+div#topWrapper.four_col#topModule3,
+div#topWrapper.four_col#topModule4,
+div#footerWrapper.four_col#footerModule1,
+div#footerWrapper.four_col#footerModule2,
+div#footerWrapper.four_col#footerModule3,
+div#footerWrapper.four_col#footerModule4,
+div#footerWrapper.four_col#footerModule6,
+div#footerWrapper.four_col#footerModule7,
+div#footerWrapper.four_col#footerModule8,
+div#footerWrapper.four_col#footerModule9
+/*	Four columns */
+ {
+    float: left;
+    width: 25 % ;
+}
+div#topWrapper.four_col.topModule4_clear,
+div#footerWrapper.four_col.footerModule4_clear,
+div#footerWrapper.four_col.footerModule9_clear
+/*	Four column clear method */
+ {
+    display: block;
+}
+div#topWrapper.five_col#topModule1,
+div#topWrapper.five_col#topModule2,
+div#topWrapper.five_col#topModule3,
+div#topWrapper.five_col#topModule4,
+div#topWrapper.five_col#topModule5,
+div#footerWrapper.five_col#footerModule1,
+div#footerWrapper.five_col#footerModule2,
+div#footerWrapper.five_col#footerModule3,
+div#footerWrapper.five_col#footerModule4,
+div#footerWrapper.five_col#footerModule6,
+div#footerWrapper.five_col#footerModule7,
+div#footerWrapper.five_col#footerModule8,
+div#footerWrapper.five_col#footerModule9,
+div#footerWrapper.five_col#footerModule10
+/*	Five columns */
+ {
+    float: left;
+    width: 20 % ;
+}
+div#footerWrapper.five_col.topModule5_clear,
+div#footerWrapper.five_col.footerModule5_clear,
+div#footerWrapper.five_col.footerModule10_clear
+/*	Five column clear method */
+ {
+    display: block;
+}
+body.ecom#topModule1,
+body.ecom#topModule2,
+body.ecom#topModule3,
+body.ecom#topModule4,
+body.ecom#topModule5,
+body.ecom#topModule10,
+body.ecom#topModule11,
+body.ecom#topModule13,
+body.ecom#footerModule1,
+body.ecom#footerModule2,
+body.ecom#footerModule3,
+body.ecom#footerModule4,
+body.ecom#footerModule6,
+body.ecom#footerModule7,
+body.ecom#footerModule8,
+body.ecom#footerModule9,
+body.ecom#footerModule10
+/* Body class: ecom - enables all ecommerce visible elements */
+ {
+    display: block;
+}

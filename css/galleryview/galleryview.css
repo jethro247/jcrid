@@ -1,0 +1,26 @@
+/* ----== Gallery view ==---- */
+.panel-overlay h2 
+	{
+		font-size:14px; 
+		padding:5px 0 0 0; 
+		text-decoration:none;
+	}
+.panel-overlay h2 a:link, 
+.panel-overlay h2 a:visited 
+	{
+		color:#fff; 
+		text-decoration:none;
+	}
+.panel-overlay h2 a:active, 
+.panel-overlay h2 a:hover 
+	{
+		color:#fff; 
+		text-decoration:underline;
+	}
+.panel-overlay p 
+	{
+		color:#fff; 
+		padding:5px 0 0 0; 
+		display:none;
+	}
+/* ----== /Gallery view ==---- */

@@ -1,0 +1,142 @@
+/* ----== Mr Site mini-cart ==---- */
+div#shoplist 
+	{
+		padding:0px 0px 10px 0px; 
+		display:inline-block; 
+		position:relative;
+	}
+div#shoplist img 
+	{
+		border:0px;
+	}
+table.minicart_lineitem 
+	{
+		border-spacing:0px; 
+		border-collapse:collapse; 
+		margin-top:5px; 
+		width:100%; 
+		margin-bottom:10px;
+	}
+table.minicart_lineitem td 
+	{
+		vertical-align:top; 
+		padding-top:2px; 
+		padding-bottom:2px;
+	}
+table.minicart_lineitem th 
+	{
+		padding:0 8px 5px 0; 
+		border-bottom:1px solid #e0e0e0; 
+		text-align:left;
+	}
+table.minicart_lineitem td.minicart_quantity 
+	{
+		padding-right:8px; 
+		text-align:center;
+	}
+table.minicart_lineitem td.minicart_description 
+	{
+		padding-right:8px; 
+		text-align:left; 
+		width:240px; /*Set a default width */
+	}
+table.minicart_lineitem td.minicart_description p 
+	{
+		font-weight:bold;
+	}
+table.minicart_lineitem td.minicart_remove p 
+	{
+		cursor:default;
+	}
+table.minicart_lineitem p 
+	{
+		padding:2px 0; 
+		margin:0px; 
+		line-height:13px;
+	}
+table.minicart_lineitem th.minicart_amount 
+	{
+		text-align:right; 
+		padding-right:0px;
+	}
+table.minicart_lineitem td.minicart_amount 
+	{
+		text-align:right; 
+		padding-right:0px;
+	}
+table.minicart_lineitem td.minicart_total 
+	{
+		font-weight:bold; 
+		font-size:12px;
+	}
+img.minicart_checkoutbutton 
+	{
+		clear:right; 
+		margin:10px 0 10px 0;
+	}
+a.showitem:hover, 
+a.showitem:active 
+	{
+		cursor:pointer; 
+		text-decoration:underline;
+	}
+tr.minicart_total_block 
+	{
+		padding:3px 0 0;
+	}
+tr.minicart_total_block td 
+	{
+		display:none;
+	}
+td.minicart_quantity, 
+th.minicart_quantity, 
+th.minicart_description, 
+th.minicart_amount, 
+td.minicart_amount 
+	{
+		display:none;
+	}
+div.checkout 
+	{
+		padding:0px 20px; 
+		border:1px solid #888;
+		margin:10px 0;
+	}
+a.minicart_checkoutbutton
+	{
+		padding:8px 10px;
+		display:block;
+		position:relative;
+		cursor:pointer;
+		float:right;
+		clear:right;
+		text-decoration:none;
+	}
+a.minicart_checkoutbutton:hover 
+	{
+		background-position:bottom left;
+	}
+/* ----== /Mr Site mini-cart ==---- */
+
+a.minicart_checkoutbutton, a.minicart_checkoutbutton:link, a.minicart_checkoutbutton:visited 
+	{
+		height:19px; 
+		overflow:hidden; 
+		padding:17px 40px 15px 20px; 
+		text-shadow:#ffffff 0px 1px 0px;
+		background:url(../../images/proceed_to_checkout.gif) transparent no-repeat top right; 
+		color:#202020;
+		display:block; 
+		position:relative; 
+		cursor:pointer; 
+		float:right; 
+		clear:right; 
+		text-decoration:none; 
+		font-size:12px; 
+		line-height:15px; 
+		letter-spacing:0pt; 
+		word-spacing:0pt; 
+		font-style:normal; 
+		text-transform:none; 
+		text-decoration:none;
+	}

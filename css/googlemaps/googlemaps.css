@@ -1,0 +1,12 @@
+/* ----== Mr Site Googlemaps ==---- */
+
+/* Maps in the sidebar and body when not working */
+div#_jqgmap,
+div#_jqgmapbody
+	{
+		padding:10px;
+		margin:10px 0px; 
+		border:1px solid; 
+		height:280px;
+	}
+/* ----== /Mr Site Googlemaps ==---- */

@@ -1,0 +1,43 @@
+/* ----== Mr Site Latest Gallery ==---- */
+div.latestGallery 
+	{
+		display:block; 
+		width:100%; 
+		padding:15px 0 0 0;
+	}
+div.latestGallery a 
+	{
+		margin:0; 
+		padding:0; 
+		display:block; 
+		color:#513F0B; 
+		text-decoration:none;
+	}
+div.latestGallery a:hover 
+	{
+		margin:0; 
+		padding:0; 
+		display:block; 
+		color:#513F0B; 
+		text-decoration:underline;
+	}
+div.latestGallery div.thumbImg 
+	{
+		padding:3px; 
+		background:#f1f1f1; 
+		cursor:pointer; 
+		border:2px solid #666666;
+		margin:0 4px 8px 4px; 
+		float:left; 
+		display:block;
+	}
+div.latestGallery div.thumbImg.thumbImg_Hover 
+	{
+		border-color:#C98B00;
+	}
+div.latestGallery img.thumbImg 
+	{
+		border:2px solid #fff; 
+		width:53px;
+	}
+/* ----== /Mr Site Latest Gallery ==---- */

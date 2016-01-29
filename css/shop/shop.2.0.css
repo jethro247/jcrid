@@ -1,0 +1,300 @@
+/* ----== Mr Site Online Shop (Contemporary) ==---- */
+/* Shop V4 + extensions */
+div#shop, 
+div#shop_title, 
+div.item_name, 
+div.item_price, 
+div#shop_extra, 
+div.item_postage, 
+div#shop_extra, 
+div#shop_item, 
+div#large, 
+div#large img,
+div#small-left, 
+div#small-right, 
+div.item_desc, 
+div.item_options, 
+div.item_buy, 
+div.item_buy input 
+	{
+		padding:0; 
+		margin:0;
+	}
+/* Shop Containers */
+div#shop 
+	{
+		margin:20px 0 20px 0; 
+		padding-top:20px; 
+		display:block; 
+		border-top:dotted 1px #999;
+	}
+div#shop_title 
+	{
+		width:100%;
+	}
+div#shop_item 
+	{
+		padding:0; 
+		margin:0 0 10px 0;
+		display:inline-block; 
+		position:relative;
+	}
+div#shop_extra 
+	{
+		font-size:11px; 
+		margin:0 0 5px 0;
+	}
+	/* Item Title Information */
+	div.item_name 
+		{
+			float:left; 
+			width:300px; 
+			font-size:14px; 
+			font-weight:bold; 
+			display:block; 
+			padding:3px 0 5px 0;
+		}
+	div.item_price, 
+	div.item_stock 
+		{
+			float:right; 
+			text-align:right; 
+			display:block; 
+			padding:3px 0 5px 0;
+		}
+	div.item_stock 
+		{
+			font-size:12px;
+		}
+	div.item_price 
+		{
+			width:100px; 
+			font-size:16px; 
+		}
+	div.item_postage 
+		{
+			text-align:right; 
+			border-top:1px dotted #cccccc; 
+			padding-top:10px;
+		}
+	/* Image Setup */
+	div#large 
+		{
+			overflow:hidden; 
+			width:100px;
+		}
+		div#small-left, 
+		div#small-right 
+			{
+				float:left; 
+				width:47px; 
+				overflow:hidden;
+			}
+			div#small-left 
+				{
+					margin:5px 5px 0 0;
+				}
+			div#small-right 
+				{
+					margin:5px 0 0 0;
+				}
+				div#large img, 
+				div#small-left img, 
+				div#small-right img 
+					{
+						width:100%; 
+						display:block;
+					}
+	/* Item Description */
+	div.item_desc 
+		{
+			margin:0; 
+			display:inline-block;
+		}
+	/* Item Options */
+	div.item_options 
+		{
+			line-height:15px; 
+			word-spacing:0pt; 
+			letter-spacing:0pt; 
+			margin:5px 0 10px 0; 
+			padding:5px; 
+			border-top:1px solid; 
+			font-size:11px; 
+			height:20px; 
+			overflow:hidden; 
+			display:block;
+		}
+		div.item_options input, 
+		div.item_options select, 
+		div.item_options input 
+			{
+				border:1px solid; 
+				font-size:11px;
+			}
+		div.item_options input:focus, 
+		div.item_options select:focus, 
+		div.item_options input:focus 
+			{
+				background-color:#FFFFCC;
+			}
+		div.item_options select 
+			{
+				cursor:default;
+			}
+		div.item_options input 
+			{
+				cursor:text;
+			}
+		div.quantity, 
+		div.options 
+			{
+				float:left; 
+				margin:0 10px 0 0;
+			}
+			div.quantity select 
+				{
+					width:35px;
+				}
+			div.options select 
+				{
+					/* width:88px; */
+				}
+			div.colour input 
+				{
+					width:88px;
+				}
+			div.item_buy_text 
+				{
+					float:right; 
+					margin:4px 10px 0 0;
+				}
+		div.colour 
+			{
+				float:left; 
+				margin:0;
+			}
+		div.quantity, 
+		div.options, 
+		div.colour 
+			{
+				display:block;
+			}
+		div.item_buy 
+			{
+				float:left; 
+				clear:left;
+			}
+/* ----== /Mr Site Online Shop (Contemporary) ==---- */
+
+/* ------------------------------------------------------------ */
+	/* Shop Structure */
+	div#shop div.float-left 
+		{
+			float:left; 
+			display:inline-block; 
+			position:relative;
+		}
+	div#shop div.float-right 
+		{
+			float:right; 
+			display:inline-block; 
+			position:relative;
+			width:100px;
+		}
+	div.standardCart.float-left 
+		{
+			float:right; 
+			margin:0px 10px 10px 0px; 
+			display:inline-block;
+			position:relative;
+		}
+	div.standardCart.float-right 
+		{
+			float:left; 
+			margin:0px; 
+			display:inline-block; 
+			position:relative;
+		}
+	div#shop_item.noimages div.standardCart.float-left 
+		{
+			margin:0px 0px 10px 0px; 
+			display:inline-block; 
+			position:relative;
+		}
+	div.proCart.float-left 
+		{
+			float:left; 
+			margin:0px; 
+			display:inline-block; 
+			position:relative;
+		}
+	div.proCart.float-right 
+		{
+			float:right; 
+			margin:0px 0px 10px 10px; 
+			display:inline-block; 
+			position:relative;
+		}
+	/* ------------------------------------------------------------ */
+
+
+
+/* Extended shop layout for Generation 3 templates */
+/* Standard / Pro extensions (mainbody) */
+div#shop											{margin:0px 0px 8px 0px; padding:0px; border:0px; position:relative;}
+div#shop div#shop_item								{padding:0px;}
+div#shop div#shop_title								{position:relative; margin:10px 0;}
+div#shop div.item_desc								{margin:0 0 8px 0; padding:0;width:450px;float:left;}
+div.item_options									{padding:10px; overflow:visible; min-height: 20px !important; height:auto !important; height:20px;float:left;}
+div#shop div.item_options							{margin:0px; padding:0px;}
+/* Set up our add to cart box */
+span.shopCheckoutOptions							{float:left;}
+span.shopCheckoutOptions span.itemOptionsLabel		{font-size:12px; float:left; display:block; width:50px;}
+span.shopCheckoutOptions div.quantity,
+span.shopCheckoutOptions div.options,
+span.shopCheckoutOptions div.colour					{display:block; padding:0px; margin:0 10px 10px 0; float:left;}
+/* Change how the div's in the add to cart box are displayed */
+div#shop div.item_stock								{margin:0px 0 0 0; display:block; float:right; width:auto; margin:3px 0px;}
+div#shop div.item_name								{padding:0px; margin:0px 0 5px 0; display:block; float:left; width:auto; clear:left; font-size:18px;}
+div#shop div.item_price								{padding:0px; margin:0 0 0px 0; display:block; float:left; width:auto; clear:left;}
+div#shop div#shop_extra								{border:0px; padding:0px; margin:0px;}
+div#shop div#shop_extra div.item_postage			{border:0px; padding:0px; margin:0px; float:left; display:block; text-align:left;}
+/* Remove our anchor hovers, colours set in base.css */
+div#shop div.item_name a,
+div#shop div.item_name a:hover						{text-decoration:none; cursor:text;}
+	/* Some uber inherited styles to override here */
+	div#shop div.item_options div.quantity select.g3select		{width:50px; border:1px solid; font-size:12px; border:1px solid #c3c3c3;}
+	div#shop div.item_options div.options select.g3select		{border:1px solid; font-size:12px; border:1px solid #c3c3c3;}
+	div#shop div.item_options div.colour input.g3input			{width:80px; border:1px solid; font-size:12px; border:1px solid #c3c3c3;}
+	div.item_buy_text											{padding:3px 0 0 0; display:none;}
+/* New span addition */
+span.shopCheckoutOptions							{display:block; margin:0px; padding:8px; background:#fffbe9; border:1px solid #c3c3c3;float:left;width:450px;}
+span.shopCheckoutOptions span.itemOptionsLabel		{padding:0 6px 0 0; font-size:12px; text-transform:none; font-style:none; letter-spacing:0pt; word-spacing:0pt; line-height:15px;}
+/* Some new widths for our older shop, lets breath some life into it */
+/* Used for the larget thumbnail */
+div#shop div.float-right								{width:100px;}/* REVERT BACK TO 200PX ONCE THE SHOP HAS BEEN UPDATED IN THE SYSTEM*/
+div#shop div.proCart.float-right						{/*margin-top:-20px;*/	/* add a - margin to clean things up */}
+div#shop div.standardCart.float-right div.LargeImage	{margin-top:10px;	/* add a - margin to clean things up */}
+div#shop div.float-right div.LargeImage					{/*width:198px;*/ width:100px; overflow:hidden; float:right;}	/* Can't believe I used an ID??? */
+div#shop div.float-right div.LargeImage img				{width:100%;}
+div#shop div.LeftSmallImage								{float:left;}
+div#shop div.RightSmallImage							{float:right;}
+div#shop div.LeftSmallImage,
+div#shop div.RightSmallImage							{width:47px;margin:10px 0 0 0; padding:0px;}
+div#shop div.LeftSmallImage img,
+div#shop  div.RightSmallImage img						{width:100%;}
+/* Without images, set to #mainColumn width to 100% - no margins / padding */
+div#shop_item.noimages div.standardCart.float-left		{margin:0px;}
+div#shop_item.noimages div.item_desc					{padding:0px 10px;}
+
+/* Shop description - #mainColumn - 100px - 30px (shop total margin) - (global padding) */
+div#shop div.float-left,
+div.standardCart.float-right,
+div.proCart.float-left										{width:500px;} /* REVERT BACK TO 420PX AFTER SHOP IS UPDATED*/
+
+body.expand div#shop div.float-left,
+body.expand div.standardCart.float-right,
+body.expand div.proCart.float-left							{width:670px;}
+	/* Without images, set to #mainColumn width to 100% - no margins / padding */
+	div#shop_item.noimages div.standardCart.float-left		{margin:0px; width:100%;}

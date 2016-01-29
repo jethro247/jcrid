@@ -1,0 +1,88 @@
+/* ----== IMPORT styles ==---- */
+@import url(forum/forum.css);
+@import url(galleryview/galleryview.css);
+@import url(latestgallery/latestgallery.css);
+@import url(mailinglist/mailinglist.css);
+@import url(minicart/minicart.css);
+@import url(socialbookmarks/socialbookmarks.css);
+@import url(userpoll/userpoll.css);
+@import url(googlemaps/googlemaps.css);
+@import url(ecommerce/ecommerce.css);
+
+
+/* Version 2.0 plugin css */
+@import url(search/search.2.0.css);
+@import url(shop/shop.2.0.css);
+@import url(twitter/twitter.2.0.css);
+@import url(form/form.2.0.css);
+@import url(blog/blog.2.0.css);
+@import url(guestbook/guestbook.2.0.css);
+@import url(latestblogposts/latestblogposts.2.0.css);
+
+/*	Validation css */
+@import url(validation/validation.css);
+
+/* ----== Widgets Styling & Sidebar Styling ==---- */
+
+/* Global Widget Container */
+div#widgetdiv 
+	{
+		/* Hide overflow */
+		overflow:hidden; 
+
+		/* Margin the widgets */
+		margin:10px auto;
+		
+		/* Pad the containers */
+		padding:0 5px;
+	}
+
+/* Global Widget Margins & Font Settings */
+div.sitewidget 
+	{
+		/* Add a margin at the bottom of the sitewidget container */
+		margin:0px 0px 20px 0px; 
+
+		/* Fix IE */
+		position:relative; 
+		top:0;
+	}
+div.sitewidget p,
+div.sitewidget
+	{
+		/* Set a default font size for our widgets */
+		font-size:12px;
+	}
+div.sitewidget h4 
+	{
+		/* Set a default font size for widget titles */
+		font-size:14px;
+	}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Extended navigation widget styles for Generation 3 templates */
+/* No need to alter these, visual styling is done in nav.css */
+div#navbar			{margin:0px 0px 10px 0; padding:0px;}
+div#navbar ul li	{list-style:none;}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Extended widget styles for Generation 3 templates */
+/* No need to alter these, visual styling is done in base.css */
+div#widgetdiv													{margin:0px; padding:0px;}
+div.sitewidget													{margin:0px 0px 10px 0; padding:0px; overflow:hidden;}
+div.sitewidget_i												{margin:0px;}
+div.sitewidget h4,
+div.sitewidget h3												{margin:0px;}
+div.sitewidget p,
+div.sitewidget ul,
+div.sitewidget ul#socialBookMarksList,
+div.sitewidget ul.sitewidgetShopUL								{margin:0px; padding:0px;}
+div.wrapGallery													{margin:0px; padding:0px;}
+/* Latest gallery */
+div.latestGallery div.thumbImg 									{margin:0px; padding:0px; display:block;}
+/* Latest blog posts */
+span.latesetBlogPostsDate										{display:block;}
+/* Booking tool */
+div.sitewidget.BookingTool										{position:relative;}
+div.sitewidget.BookingTool div.sitewidget_i						{min-height:250px !important; height:auto !important; height:250px;}
+div.sitewidget.BookingTool div.yui-calcontainer.multi			{border:0px; background:transparent; margin-left:0px;}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */

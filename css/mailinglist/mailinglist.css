@@ -1,0 +1,42 @@
+/* ----== Mr Site Mailinglist ==---- */
+div.sitewidget.mailinglist p
+	{
+		margin:5px 0 10px 0px;
+	}
+td.mailingListLabel
+	{
+		font-weight:bold;
+	}
+form#mailingListForm
+	{
+		margin:0px;
+		padding:0px;
+	}
+input.mailinglistemail
+	{
+		cursor:text;
+		overflow:hidden; 
+		top:0px; 
+		position:relative;
+		display:inline-block; 
+		height:14px; 
+		width:138px;
+	}
+input.mailinglistButton
+	{
+		display:inline-block;
+		position:relative;
+		cursor:pointer;
+		top:1px;
+		margin:0px 0px 0px 0px;
+		padding:0px;
+		height:30px;
+		width:69px;
+		border:0px;
+		border-left:0px;
+	}
+input.mailinglistButton.hover_button
+	{
+		cursor:pointer;
+	}
+/* ----== /Mr Site Mailinglist ==---- */

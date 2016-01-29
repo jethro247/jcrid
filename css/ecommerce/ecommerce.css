@@ -1,0 +1,114 @@
+/* eCommerce package */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* eCommerce extensions (mainbody) */
+	/* Items grid */
+	div.ProductsGrid h1					{margin:0px 0px 0px 0px; padding:8px; position:relative;}
+	div.ProductsGrid h1 a.headerRSSlink	{position:absolute; top:10px; right:10px;}
+	div.ItemsGridContainer				{display:inline-block; position:relative; padding:9px 0 0;}	/* Give the container some nice padding */
+	div.ItemsGrid						{float:left; width:25%; margin:0 0 20px 0;}
+	body.expand	div.ItemsGrid			{width:20%;}
+	div.ItemsGrid div.ProductsGridImage	{height:150px; overflow:hidden;}
+	div.ItemsGrid div.ProductsGridDescription	{margin:10px 0 10px 0;}
+	div.ItemsGrid div.ProductsGridDescription p	{margin:0px; padding:0px;}
+	div.ItemsGrid div.buttons			{margin:10px 0 0 0;}
+	div.ItemsGrid img					{display:block; margin:0 auto; padding:0px; width:100%;}
+	div.ItemsGrid_inner					{padding:0 10px;}
+		div.ItemsGrid h4				{font-size:13px; font-weight:bold; margin:5px 0 0 0; padding:0px;}
+		
+/*	Contact form page */
+	h1.contactform						{margin:0 0 10px 0;}
+
+	/* Search and results */
+	table.searchResultsItem td			{margin:0px; padding:0px;}
+	div.productSearchResults			{margin:10px 0 10px 0;}
+	h1.searchPanel						{margin:0px 0px 10px 0px;}
+	td.searchResultsImage div.picture	{padding:0px; overflow:hidden;}
+	td.searchResultsImage div.picture img	{display:block; margin:0px; padding:0px;}
+	td.searchResultsDescription,
+	td.searchResultsImage				{vertical-align:top;}
+	td.searchResultsDescription h3		{margin:5px 0px 10px 0; padding:0px;}
+	td.paddingTableCell					{font-size:0pt; visibility:hidden; width:8px;}
+	td.searchResultsDescription div.price {margin:10px 0 10px 0;}
+	input.searchtext					{width:400px; }
+	table.searchInProductDescriptions td	{vertical-align:middle;}
+	table.searchInProductDescriptions td input	{margin-right:5px;}
+	div.searchInProductDescriptions		{background:#f9f9f9; border:1px solid #acacac; border-top:0px; display:block; float:left; padding:5px 10px 5px 5px;}
+		/* If we're expanding, then set our results differently */
+		body.expand div.productSearchResults div.ItemBox	{float:left; width:48%;}
+
+	/* Product description */
+	div.ProductImages					{float:left; width:168px; display:block; margin:0 0px 0 0;}
+	div.ProductDetailsImage img			{display:block; margin:0px; padding:0px;}
+	div.ProductDetail					{float:right; display:block;}
+	div.ProductDetail div.price			{font-size:14px; font-weight:bold;margin:5px 0 3px 0;}
+	div.ProductDetail h1				{margin:0px 0px 5px 0px;}
+	div.ProductDetailsImage				{border:1px solid #000; width:166px; height:249px; overflow:hidden; position:relative;}
+	div.ProductRatingBox				{margin:0px 0 5px 0;}
+	span.RatingText						{float:left;display:block; font-size:11px; padding:3px 0;}
+	div.ProductVariantLine				{padding:10px; margin:15px 0; float:left; display:block;}
+		/* */
+		div.ProductThumbContainer h4	{margin:0px 0 0 3px; padding:0px;}
+		div.ProductDetailsImage a.ProductImageLink {cursor:-moz-zoom-in;}
+		div.ProductDetailsImage.ZoomImage a.ProductImageLink {cursor:-moz-zoom-out;}
+		div.ProductDetailsImage.ZoomImage img {position:absolute; top:0px; left:0px;}
+		div.ProductThumbContainer	{margin:10px 0 0 -2px;}
+		/* Link styles */
+		span.ProductThumbnail			{cursor:pointer; display:block; overflow:hidden; float:left; width:85px; margin:0px; padding:0px;}
+		span.ProductThumbnailInner		{margin:5px; display:block;height:100px; overflow:hidden;}
+		span.ProductThumbnailInnerInner	{display:block;}
+		span.ProductThumbnailInnerInner img	{width:200%; margin-left:-50%;}
+		
+		a.LightBoxPopup {border:1px solid #e8e8e8; float:left; margin:0 0 0 3px; cursor:pointer; font-size:11px; border-top:0px; padding:3px 5px 3px 5px; display:block;}
+		a.LightBoxPopup:hover {cursor:pointer; text-decoration:none;}
+	
+		/* Rating */
+		div.rating {margin:8px 0 0px 0; height:16px;}
+		.ratingStar{font-size: 0pt;width: 13px;height: 12px;margin: 0px;padding: 0px;cursor: pointer;display: block;background-repeat: no-repeat;}
+		.filledRatingStar{background-image: url(../shop/images/FilledStar.png);}
+		.emptyRatingStar{background-image: url(../shop/images/EmptyStar.png);}
+		.savedRatingStar{background-image: url(../shop/images/SavedStar.png);}
+	
+	/* Order progress */
+	div.OrderProgress					{margin:0px; padding:0px;}
+	div.OrderProgress ul				{margin:0px 0px 10px 0px; padding:0px;}
+	div.OrderProgress ul li				{list-style:none; display:block; float:left;}
+	div.OrderProgress ul li span		{float:left; display:block;}
+
+	/* Checkout */
+	div.shoppingcart							{margin:0 0 10px 0;}
+	div.shoppingcart h1							{margin:0px; padding:0px;}
+	table.cartCheckout							{margin:10px 0 15px 0px; border:1px solid #e0e0e0; border-collapse:collapse;}
+	table.cartCheckout tr.cart-header-row		{background:#f9f9f9;}
+	table.cartCheckout tr.cart-header-row td	{border:1px solid #e0e0e0;}
+	table.cartCheckout tr.cart-item-row td		{border:1px solid #e0e0e0;}
+	table.cartCheckout td.itemremove input		{text-align:center;}
+	table.cartCheckout td						{padding:5px;}
+	table.cartCheckout img.CheckoutImage		{width:50px;}
+	div.TotalInfo								{border:1px solid #e0e0e0; display:block; float:right; padding:5px; background:#f9f9f9;}
+	table.cart-total td.cart_total_left			{padding-right:20px;}
+	table.cart-total td.cart_total_right		{}
+	
+	/* Related products (side and full) */
+	div.RelatedProductsGrid							{margin:10px 0;width:628px;}
+	body.expand div.RelatedProductsGrid				{width:881px;}	/* Expand class | uses the default 900px body wrapper width */
+	div.RelatedProductsGridSide						{margin:10px 0; width:230px;}
+	div.RelatedProductsGrid ul.ObjectCarouselList								{width:100%; margin:0px; padding:0px; overflow:hidden;}
+	div.RelatedProductsGrid ul.ObjectCarouselList li							{width:20%; margin:0px; padding:0px; list-style:none; float:left;}
+	div.RelatedProductsGrid ul.ObjectCarouselList li div.ImageBlock				{overflow:hidden; margin:0 0 5px 0;}
+	div.RelatedProductsGrid ul.ObjectCarouselList li div.ImageBlockInner		{height:100px; padding:0px; margin:8px; overflow:hidden;}
+	div.RelatedProductsGrid ul.ObjectCarouselList li div.ImageBlock img			{display:block; margin:0 auto; padding:0px; vertical-align:top;}
+	div.RelatedProductsGrid ul.ObjectCarouselList li div.ImageTitle				{margin:0 0 15px 0; text-align:center;}
+	div.RelatedProductsGridSide ul.ObjectCarouselListSide						{width:100%; margin:0px; padding:0px;}
+	div.RelatedProductsGridSide ul.ObjectCarouselListSide li					{width:50%; margin:0px; padding:0px; list-style:none; float:left;}
+	div.RelatedProductsGridSide ul.ObjectCarouselListSide li div.ImageBlock		{overflow:hidden; margin:0 0 5px 0;}
+	div.RelatedProductsGridSide ul.ObjectCarouselListSide li div.ImageBlockInner{height:100px; padding:0px; margin:8px; overflow:hidden;}
+	div.RelatedProductsGridSide ul.ObjectCarouselListSide li div.ImageBlock img	{display:block; margin:0 auto; padding:0px; vertical-align:middle;}
+	div.RelatedProductsGridSide ul.ObjectCarouselListSide li div.ImageTitle		{margin:0 0 15px 0; text-align:center;}
+		/* Title styling */
+		div.RelatedProductsGridTitle					{width:100%; display:block; position:relative;}
+		div.RelatedProductsGrid h2.RelatedProductsGrid,
+		div.RelatedProductsGridSide h2.RelatedProductsGrid{margin:0px; padding:8px;}
+		span.RelatedProductsGridControl					{position:absolute; top:4px; right:4px; display:block; cursor:pointer;}
+		span.RelatedProductsGridControl span			{margin:0 0 0 2px; display:block; font-weight:normal; font-size:11px; padding:5px; float:right; cursor:pointer;}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */

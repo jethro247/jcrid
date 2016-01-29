@@ -1,0 +1,146 @@
+/* ----== Generic form styling for ALL templates ==---- */
+
+/*
+input.mailinglistemail,
+input#searchText {padding:5px; color:#202020;}
+*/
+
+/* ----== Mr Site Form Wizard ==---- */
+h2.myformtitle 
+	{
+		margin:0px 0 10px 0; 
+		padding:0px;
+	}
+form.myform fieldset 
+	{
+		margin:0; 
+		padding:0;
+	}
+form.myform legend 
+	{
+		margin:0 0 10px 0; 
+		padding: 0; 
+		font-weight:bold;
+	}
+form.myform label 
+	{
+		display:inline-block;
+		line-height: 1.4;
+		vertical-align:top;
+		min-width:80px;
+		padding-right:20px;
+	}
+fieldset#submitformfieldset 
+	{
+		margin:0 0 10px 0;
+	}
+fieldset#submitformfieldset label 
+	{
+		display:inline-block; 
+		line-height: 1.4; 
+		vertical-align:top; 
+		width:173px;
+	}
+form.myform fieldset fieldset 
+	{
+		border: none; 
+		margin: 3px 0 0;
+	}
+form.myform fieldset fieldset legend 
+	{
+		padding:0; 
+		font-weight:normal;
+	}
+form.myform fieldset fieldset label 
+	{
+		display:block; 
+		width:auto; 
+		margin-left:103px;
+	}
+/*\*//*/ form.myform legend { display: inline-block; } /* IE Mac legend fix */
+form.myform legend 
+	{
+		padding-left:0;
+	}
+form.myform fieldset 
+	{
+		border:none;
+	}
+form.myform fieldset fieldset 
+	{
+		background: none;
+	}
+form.myform fieldset p, 
+form.myform fieldset fieldset 
+	{
+		padding:0;
+	}
+form.myform img 
+	{
+		margin:10px 0 0 193px;
+	}
+span.description 
+	{
+		display:block; 
+		margin:10px 0 10px 0;
+	}
+div.formspace 
+	{
+		display:none; 
+		float:left;
+	}
+div.checkbox 
+	{
+		display:inline-block;
+		position:relative;
+	}
+input.input_captcha 
+	{
+		width:150px;
+	}
+input.submit_myform 
+	{
+		margin:10px 0 0 193px;
+	}
+form.myformv2 fieldset 
+	{
+		padding:0px; 
+		margin:0px 0px 10px 0; 
+		border:0px;
+	}
+form.myformv2 legend
+	{
+		padding:10px 5px; 
+		margin:0px; 
+		line-height:15px;
+	}
+div.formsection
+	{
+		width:500px; 
+		margin:0 0 5px 0;
+	}
+div.formleft 
+	{
+		float:left; 
+		width:180px; 
+		padding:3px 0 0 0; 
+		font-weight:bold;
+	}
+div.formright 
+	{
+		float:left; 
+		width:200px;
+	}
+div.formright input 
+	{
+		margin:0 0 5px 0;
+	}
+div.formright input.submit_myform 
+	{
+		margin-top:10px;
+	}
+div.formright input.myformcheckbox 
+	{
+		margin-right:5px; 
+	}
+/* ----== /Mr Site Form Wizard ==---- */

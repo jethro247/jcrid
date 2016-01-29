@@ -1,0 +1,44 @@
+/* ----== Mr Site latest blog posts ==---- */
+ul.latestBlogPostsList 
+	{
+		margin:10px 0px 0px 0px; 
+		padding:0px;
+	}
+ul.latestBlogPostsList li a 
+	{
+		background:transparent; 
+		border:0px;
+	}
+li.latestBlogPostsItem 
+	{
+		margin:0 0 10px 0; 
+		padding:0px 0px 0px 0px; 
+		list-style:none; 
+		background:transparent; 
+		border:0px;
+	}
+li.latestBlogPostsItem h5.latestBlogPostsItem 
+	{
+		font-size:12px;
+		font-weight:bold;
+		margin:0 0 3px 0; 
+		background:transparent;
+	}
+	li.latestBlogPostsItem h5.latestBlogPostsItem a:hover, 
+	li.latestBlogPostsItem h5.latestBlogPostsItem a:active 
+		{
+			text-decoration:underline;
+			background:transparent; 
+			border:0px;
+		}
+	p.latestBlogPostsCopy 
+		{
+			margin:3px 0 3px 0;
+		}
+	span.latesetBlogPostsDate 
+		{
+			font-style:italic; 
+			font-size:11px; 
+			margin:0px 0px 5px;
+		}
+/* ----== /Mr Site latest blog posts ==---- */

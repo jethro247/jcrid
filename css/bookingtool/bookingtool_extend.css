@@ -1,0 +1,213 @@
+/* Booking tool client side */
+/* ----------------------------------------------------------------------------------------------------------------
+					FOR G3THEME, THIS FILE WILL NOT BE USED, SO ANY OLDER THEMES INCLUDE BELOW
+   ---------------------------------------------------------------------------------------------------------------- */
+input.g3input, select.g3select, button.g3Button,span.RelatedProductsGridControl span, textarea.g3textarea, div.BookingToolDialog
+	{
+		/* ALL widget and module form elements */
+		font-family:Arial, Helvetica, sans-serif; 
+		font-size:12px;
+
+		/* Global overrides */
+		letter-spacing:0pt;
+		word-spacing:0pt;
+		text-transform:none;
+		font-style:normal;
+		line-height:15px;
+		
+	}
+	input.g3input, td.BookingFormValue input, select.g3select, td.BookingFormValue select
+		{
+			padding:5px;
+		}
+	label.g3label, span.g3label								
+		{
+			font-weight:bold; 
+			display:block; 
+			padding-right:5px;
+		}
+/*	BASE STYLES */
+	input.g3input, select.g3select, 
+	input.g3Button,	textarea.g3textarea,
+	a.minicart_checkoutbutton,
+	input#viewCalenfarInfoBtn,
+	input#add_booking,
+	input#SaveBookingBtn,
+	td.BookingFormValue input
+		{
+			border:1px solid #acacac;
+		}
+button.g3Button
+	{
+		cursor:pointer;
+	}
+
+	/*	BUTTONS and tings */
+	input#viewCalenfarInfoBtn,input#add_booking, input#SaveBookingBtn,
+	td.BookingFormValue input, .RoundedCornerA, textarea.g3textarea, .RoundedCornerB	
+		{
+			-moz-border-radius: 2px; -webkit-border-radius: 2px; 
+		}
+	div.BookingToolDialog
+	{
+		/* ALL widget and module form elements */
+		font-family:Arial, Helvetica, sans-serif; 
+		font-size:12px;
+
+		/* Global overrides */
+		letter-spacing:0pt;
+		word-spacing:0pt;
+		text-transform:none;
+		font-style:normal;
+		line-height:15px;
+	}
+	input#viewCalenfarInfoBtn,
+	input#add_booking,
+	input#SaveBookingBtn,
+	td.BookingFormValue input
+		{
+			border:1px solid #acacac;
+		}
+	
+	input#viewCalenfarInfoBtn,
+	input#add_booking,
+	input#SaveBookingBtn									{color:#2e74a6;}
+	/* ---------------------------------------------------------------------------------------------------------------- */
+				/*	Booking tool widget */
+					/* View info button */
+					input#viewCalenfarInfoBtn
+						{
+							cursor:pointer;
+							border-color:#163773; 
+							background:url(images/info.png) #648dd9 no-repeat 5px 5px; 
+							color:#fff; 
+							text-shadow:#2660c8 0px -1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							float:left;
+							margin:0 0 10px 0;
+							font-family:arial, helvetica, sans-serif;
+						}
+						input#viewCalenfarInfoBtn.addHover
+							{
+								cursor:pointer;
+								background-color:#4067ae; 
+							}
+					/* Add booking button */
+					input#add_booking
+						{
+							cursor:pointer;
+							border-color:#289627; 
+							background:url(images/add.png) #c9f2c7 no-repeat 5px 5px; 
+							color:#1b6819; 
+							text-shadow:#fff 0px 1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							float:right;
+							margin:0 0 10px 0;
+							font-family:arial, helvetica, sans-serif;
+						}
+						input#add_booking.addHover
+							{
+								cursor:pointer;
+								background-color:#89e288;
+							}
+					/*	Cancel booking button */
+					input#SaveBookingBtn
+						{
+							cursor:pointer;
+							border-color:#289627; 
+							background:url(images/add.png) #c9f2c7 no-repeat 5px 5px; 
+							color:#1b6819; 
+							text-shadow:#fff 0px 1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							margin:0 0 10px 0;
+							float:right;
+							font-family:arial, helvetica, sans-serif;
+						}
+						input#SaveBookingBtn.addHover
+							{
+								cursor:pointer;
+								background-color:#89e288;
+							}
+					/* Save booking */
+					input#CancelBookingBtn
+						{
+							cursor:pointer;
+							border-color:#920101; 
+							background:url(images/cancel.png) #ef807d no-repeat 5px 5px; 
+							color:#9f0303; 
+							text-shadow:#f8a6a3 0px 1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							margin:0 0 10px 0;
+							font-family:arial, helvetica, sans-serif;
+							float:left;
+						}
+						input#CancelBookingBtn.addHover
+							{
+								cursor:pointer;
+								background-color:#e76f6a; 
+							}
+					
+					/* Save booking */
+					input.g3input.MakeBookingBtn
+						{
+							cursor:pointer;
+							border-color:#289627; 
+							background:url(images/accept.png) #c9f2c7 no-repeat 5px 5px; 
+							color:#1b6819; 
+							text-shadow:#fff 0px 1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							float:right;
+							margin:0 0 10px 0;
+							font-family:arial, helvetica, sans-serif;
+						}
+						input.g3input.MakeBookingBtn.addHover
+							{
+								cursor:pointer;
+								background-color:#89e288;
+							}
+					/* Cancel booking */
+					input.g3input.CancelBookingBtn
+						{
+							cursor:pointer;
+							border-color:#920101; 
+							background:url(images/cancel.png) #ef807d no-repeat 5px 5px; 
+							color:#9f0303; 
+							text-shadow:#f8a6a3 0px 1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							margin:0 0 10px 0;
+							float:left;
+							font-family:arial, helvetica, sans-serif;
+						}
+						input.g3input.CancelBookingBtn.addHover
+							{
+								cursor:pointer;
+								background-color:#fe9f9f;
+							}
+							
+					input.g3input.PayWithPayPal
+						{
+							cursor:pointer;
+							border-color:#b54901; 
+							background:url(images/paynow.png) #efb97a no-repeat 5px 5px; 
+							color:#b54901; 
+							text-shadow:#fde8cf 0px 1px 0px;
+							padding:5px 7px 5px 22px;
+							font-size:12px;
+							float:right;
+							margin:0 0 10px 0;
+							font-family:arial, helvetica, sans-serif;
+						}
+						input.g3input.PayWithPayPal.addHover
+							{
+								cursor:pointer;
+								background-color:#fc8b01;
+							}
+				/* ---------------------------------------------------------------------------------------------------------------- */
+	
+		

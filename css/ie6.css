@@ -1,0 +1,9 @@
+/* IE6 fix */
+.nav li li a {width:100%;}
+#shop {margin-bottom:0;}
+#shop .float-right {margin-right:3px;}
+
+#navbar ul {clear:both;}
+#navbar li {width:200px; float:left; display:block; clear:left;}
+
+.thumbdiv {width:200px;}

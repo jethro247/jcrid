@@ -1,0 +1,62 @@
+/* ----== Social Bookmarking Style ==---- */
+div.socialBookMarks 
+	{
+		margin:0 0px 0 0px;
+		position:relative;
+	}
+ul#socialBookMarksList 
+	{
+		display:inline-block;
+		margin:0 10px 10px 0; 
+		padding:0px 5px 0px 5px;
+	}
+ul#socialBookMarksList.full li 
+	{
+		padding:0 0 10px 20px; 
+		display:inline-block; 
+		float:left; 
+		margin-right:15px; 
+		list-style:none;
+	}
+ul#socialBookMarksList.side li 
+	{
+		padding:2px 0 5px 25px; 
+		display:block; 
+		margin-right:15px; 
+		list-style:none; 
+		border:0px;
+	}
+ul#socialBookMarksList.side li a:hover, 
+ul#socialBookMarksList.side li a:active 
+	{
+		text-decoration:underline;
+	}
+	ul#socialBookMarksList li.facebook 
+		{
+			background:url(images/facebook_16.gif) no-repeat left;
+		}
+	ul#socialBookMarksList li.bebo 
+		{
+			background:url(images/bebo_16.gif) no-repeat left;
+		}
+	ul#socialBookMarksList li.twitter 
+		{
+			background:url(images/twitter_16.gif) no-repeat left;
+		}
+	ul#socialBookMarksList li.digg 
+		{
+			background:url(images/digg_16.gif) no-repeat left;
+		}
+	ul#socialBookMarksList li.stumbleupon 
+		{
+			background:url(images/stumbleupon_16.gif) no-repeat left;
+		}
+	ul#socialBookMarksList li.delicious 
+		{
+			background:url(images/delicious_16.gif) no-repeat left;
+		}
+	ul#socialBookMarksList li.reddit 
+		{
+			background:url(images/reddit_16.gif) no-repeat left;
+		}
+/* ----== /Social Bookmarking Style ==---- */

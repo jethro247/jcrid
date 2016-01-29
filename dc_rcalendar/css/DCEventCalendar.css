@@ -1,0 +1,351 @@
+#example {height:30em;}
+label { display:block;float:left;width:45%;clear:left; }
+.clear { clear:both; }
+#resp { margin:10px;padding:5px;border:1px solid #ccc;background:#fff;}
+#resp li { font-family:monospace }
+
+.cellworkingdates {
+background-color:#c5e4f5;
+border:1px solid #000000;
+margin:5px;
+width:100px;
+}
+.cell {
+background-color:#c5e4f5;
+border:1px solid #000000;
+text-align:center;
+margin:2px;
+float:left;
+width:49px;
+cursor:hand;
+}
+.cellbusy a {
+text-decoration:none;
+}
+.cellbusy {
+background-color:#c5e4f5;
+border:1px solid #000000;
+text-align:center;
+margin:2px;
+float:left;
+width:49px;
+text-decoration:line-through;
+cursor:hand; 
+}
+.cell a {
+text-decoration:none;
+}
+
+.celltimes {
+background-color:#c5e4f5;
+border:1px solid #000000;
+text-align:center;
+margin:2px;
+float:left;
+width:59px;
+}
+.acell {
+text-decoration:none;
+cursor:hand;
+}
+.acell :hover{
+background-color:#ffffff;
+}
+.cellReserved {
+background-color:#B6EA59;
+border:1px solid #000000;
+color:#000000;
+text-align:center;
+margin:2px;
+float:left;
+width:49px;
+cursor:hand;
+}
+
+.cellReserved a {
+text-decoration:none;
+color:#000000;
+}
+.editorCell input
+{
+width:200px;
+}
+.editorCell a {
+text-decoration:none;
+}
+.editorCell textarea
+{
+width:200px;
+}
+#caladmin td.calcell {
+    height:40px;
+    width:40px;
+	border:1px solid #E0E0E0;
+	text-align:center;
+}
+#caladmin td.calcell .sub
+{
+width:100%;border:0px;left:-5px;
+}
+td.calcell .sub
+{
+width:100%;border:0px;left:-5px;
+}
+td.calcell .subhover
+{
+width:100%;border:0px;left:-5px;
+*filter:alpha(opacity=70);
+}
+.yui-calendar td.no-working { background-color:#ddd; }
+
+
+#divAddEvent .yui-calendar td.calcell {
+	color:#003DB8;
+	width:10px;
+	height:10px;
+}
+.yui-calendar td.calcell.restricted { text-decoration:line-through; margin:2px;background-color:#E0E0E0};
+.yui-calendar td.calcell.today td.calcell.restricted{	background-color:#E0E0E0;}
+.yui-calendar td.calcell.reserveddate { background-color:#B6EA59;  }
+.yui-calendar td.calcell.fulldate { background-color:#ffa0a0;  }
+.yui-calendar td.calcell
+{padding:0px}
+.yui-calendar td.calcell.eventdate { background-color:#ffffa0;padding:0px;color:#000000;}
+.yui-calendar td.calcell.eventdate_price { background-color:#ffff00;padding:0px;}
+
+.yui-calendar td.calcell.eventdate_first { padding:0px; background-image: url(bg_datefirst_00.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last { padding:0px; background-image: url(bg_datelast_00.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_first_price { padding:0px; background-image: url(bg_datefirst_03.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_price { padding:0px; background-image: url(bg_datelast_03.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+/* selection colour schemes */	
+.yui-calendar td.calcell.eventdate_ffcccc { background-color:#ffcccc;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ffcccc{ padding:0px; background-image: url(bg_datefirst_00.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ffcccc{ padding:0px; background-image: url(bg_datelast_00.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ff6666 { background-color:#ff6666;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ff6666{ padding:0px; background-image: url(bg_datefirst_01.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ff6666{ padding:0px; background-image: url(bg_datelast_01.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ff0000 { background-color:#ff0000;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ff0000{ padding:0px; background-image: url(bg_datefirst_02.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ff0000{ padding:0px; background-image: url(bg_datelast_02.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ff6600 { background-color:#ff6600;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ff6600{ padding:0px; background-image: url(bg_datefirst_03.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ff6600{ padding:0px; background-image: url(bg_datelast_03.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ff9966 { background-color:#ff9966;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ff9966{ padding:0px; background-image: url(bg_datefirst_04.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ff9966{ padding:0px; background-image: url(bg_datelast_04.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+	
+.yui-calendar td.calcell.eventdate_ffcc99 { background-color:#ffcc99;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ffcc99{ padding:0px; background-image: url(bg_datefirst_05.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ffcc99{ padding:0px; background-image: url(bg_datelast_05.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ffffcc { background-color:#ffffcc;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ffffcc{ padding:0px; background-image: url(bg_datefirst_06.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ffffcc{ padding:0px; background-image: url(bg_datelast_06.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ffff66 { background-color:#ffff66;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ffff66{ padding:0px; background-image: url(bg_datefirst_07.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ffff66{ padding:0px; background-image: url(bg_datelast_07.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ccffcc { background-color:#ccffcc;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ccffcc{ padding:0px; background-image: url(bg_datefirst_08.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ccffcc{ padding:0px; background-image: url(bg_datelast_08.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_66ff66 { background-color:#66ff66;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_66ff66{ padding:0px; background-image: url(bg_datefirst_09.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_66ff66{ padding:0px; background-image: url(bg_datelast_09.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_33cc99 { background-color:#33cc99;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_33cc99{ padding:0px; background-image: url(bg_datefirst_10.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_33cc99{ padding:0px; background-image: url(bg_datelast_10.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+	
+.yui-calendar td.calcell.eventdate_33cccc { background-color:#33cccc;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_33cccc{ padding:0px; background-image: url(bg_datefirst_11.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_33cccc{ padding:0px; background-image: url(bg_datelast_11.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+	
+.yui-calendar td.calcell.eventdate_99ffff { background-color:#99ffff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_99ffff{ padding:0px; background-image: url(bg_datefirst_12.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_99ffff{ padding:0px; background-image: url(bg_datelast_12.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+
+.yui-calendar td.calcell.eventdate_99ccff { background-color:#99ccff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_99ccff{ padding:0px; background-image: url(bg_datefirst_13.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_99ccff{ padding:0px; background-image: url(bg_datelast_13.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+
+.yui-calendar td.calcell.eventdate_3399ff { background-color:#3399ff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_3399ff{ padding:0px; background-image: url(bg_datefirst_14.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_3399ff{ padding:0px; background-image: url(bg_datelast_14.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+
+.yui-calendar td.calcell.eventdate_3333ff { background-color:#3333ff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_3333ff{ padding:0px; background-image: url(bg_datefirst_15.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_3333ff{ padding:0px; background-image: url(bg_datelast_15.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+
+.yui-calendar td.calcell.eventdate_9999ff { background-color:#9999ff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_9999ff{ padding:0px; background-image: url(bg_datefirst_16.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_9999ff{ padding:0px; background-image: url(bg_datelast_16.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+
+.yui-calendar td.calcell.eventdate_ccccff { background-color:#ccccff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ccccff{ padding:0px; background-image: url(bg_datefirst_17.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ccccff{ padding:0px; background-image: url(bg_datelast_17.gif); 
+	background-repeat:no-repeat; background-position:top right;}	
+
+.yui-calendar td.calcell.eventdate_ffccff { background-color:#ffccff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ffccff{ padding:0px; background-image: url(bg_datefirst_18.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ffccff{ padding:0px; background-image: url(bg_datelast_18.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ff66ff { background-color:#ff66ff;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ff66ff{ padding:0px; background-image: url(bg_datefirst_19.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ff66ff{ padding:0px; background-image: url(bg_datelast_19.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_ff00cc { background-color:#ff00cc;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_ff00cc{ padding:0px; background-image: url(bg_datefirst_20.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_ff00cc{ padding:0px; background-image: url(bg_datelast_20.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_cc9999 { background-color:#cc9999;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_cc9999{ padding:0px; background-image: url(bg_datefirst_21.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_cc9999{ padding:0px; background-image: url(bg_datelast_21.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_996666 {background-color:#996666;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_996666{ padding:0px; background-image: url(bg_datefirst_22.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_996666{ padding:0px; background-image: url(bg_datelast_22.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+
+.yui-calendar td.calcell.eventdate_cccccc {background-color:#cccccc;padding:0px;}
+.yui-calendar td.calcell.eventdate_first_cccccc{ padding:0px; background-image: url(bg_datefirst_23.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+.yui-calendar td.calcell.eventdate_last_cccccc{ padding:0px; background-image: url(bg_datelast_23.gif); 
+	background-repeat:no-repeat; background-position:top right;}
+	
+	
+	.yui-calendar td.calcell.eventdateHover { color:#000;}
+
+
+.yui-calendar td.calcell .h{
+    padding:0px 0px;
+	width:100px;
+	min-height:100px;
+	text-align:right;
+	vertical-align: top;
+}
+.yui-calendar td.calcell .h a{
+    color:#000000;
+}
+.yui-calendar td.calcell .h a:hover{
+background-color:#6699CC;
+color:#ffffff;
+}
+.yui-calendar td.calcell .number{
+    background-color:#6699CC;
+    float:right;
+    width:15px;
+    height:15px;
+    text-align:center;
+    vertical-align:middle;
+    color:#ffffff
+    
+}
+#divAddEvent #colors
+{
+width:168px;
+float:left;
+padding:5px;
+}
+#divAddEvent .fl
+{
+float:left;
+padding:5px;
+}
+.boxcolor
+{
+float:left;
+width:40px;
+height:40px;
+border:2px solid #F2F2F2;
+}
+.boxcolor a
+{
+display:block;
+text-decoration:none;
+}
+.boxcolor a:hover
+{
+text-decoration:none;
+border-color: #000000;
+}
+.addEventDiv
+{
+clear:both;
+padding-top:15px;
+}
+.yui-toolbar-container .yui-toolbar-editcode span.yui-toolbar-icon {
+        background-image: url( html_editor.gif );
+        background-position: 0 1px;
+        left: 5px;
+    }
+    .yui-toolbar-container .yui-button-editcode-selected span.yui-toolbar-icon {
+        background-image: url( html_editor.gif );
+        background-position: 0 1px;
+        left: 5px;
+    }
+    .editor-hidden {
+        visibility: hidden;
+        top: -9999px;
+        left: -9999px;
+        position: absolute;
+    }
+      
+.event-button
+{
+padding-left:5px; padding-right:5px; margin:1px;background-color:#F7F9FB; border:1px solid #7B9EBD;
+}

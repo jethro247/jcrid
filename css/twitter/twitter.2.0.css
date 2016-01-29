@@ -1,0 +1,77 @@
+/* Integrated style twitter widget */
+div.sitewidget.twitter.default h4
+	{
+		margin:0px 0 0 0; 
+		font-size:14px; 
+	}
+
+div.sitewidget.twitter.default div.sitewidget_i
+	{
+		padding:8px 0 0px;
+	}
+
+
+div.sitewidget.twitter.default div#twitter 
+	{
+		margin:0px 0 0px 0;
+		border:0px;
+	}
+div.sitewidget.twitter.default div#twitter h2 
+	{
+		display:none;
+	}
+div.sitewidget.twitter.default div#twitter p#preloader 
+	{
+		margin:0;
+		padding:8px 8px 8px 8px; 
+		background: transparent url(images/loader.gif) 1em center no-repeat;
+	}
+div.sitewidget.twitter.default div#twitter ul#twitter_update_list 
+	{
+		margin:0; 
+		padding:0px 0px 0px 0; 
+		list-style-type: none;
+	}
+div.sitewidget.twitter.default div#twitter ul#twitter_update_list li 
+	{
+		margin:0; 
+		padding:8px 8px 3px 8px; 
+		border-bottom:1px solid #f0f0f0;
+		white-space:pre-wrap;
+		white-space:-moz-pre-wrap;
+		white-space:-pre-wrap;
+		white-space:-o-pre-wrap;
+		word-wrap:break-word; 
+	}
+
+div.sitewidget.twitter.default div#twitter ul#twitter_update_list li span 
+	{
+		
+	}
+div.sitewidget.twitter.default div#twitter ul#twitter_update_list li.firstTweet 
+	{
+		margin:0px; 
+		padding:0px 8px 8px 8px;
+	}
+div.sitewidget.twitter.default div#twitter ul#twitter_update_list li.lastTweet 
+	{
+		margin:0px;
+		padding:8px 8px 8px 8px;
+		border-bottom: none;
+	}
+div.sitewidget.twitter.default div#twitter p.profileLink 
+	{
+		margin:0px;
+		display:block; 
+		font-size:11px;
+		letter-spacing:0pt;
+		word-spacing:0pt;
+		line-height:15px;
+		padding:8px 8px 8px 8px;
+	}
+div.sitewidget.twitter.default div#twitter p.profileLink a,
+div.sitewidget.twitter.default div#twitter p.profileLink a:hover
+	{
+		text-decoration:none;
+	}
+/* ----== /Mr Site Twitter Widget ==---- */

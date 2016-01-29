@@ -1,0 +1,42 @@
+/* Generic context menu styles */
+.contextMenu {
+	position: absolute;
+	width: 130;
+	z-index: 99999;
+	display: none;
+}
+
+.contextMenu UL
+	{
+		margin:0px;
+		padding:0px;
+	}
+.contextMenu LI
+	{
+		list-style:none;
+	}
+
+	.contextMenu A
+	{
+		padding:20px;
+	}
+
+.contextMenu.ui-widget-header
+	{
+		
+	}
+
+.contextMenu LI.hover.disabled A {
+	background-color: transparent;
+}
+
+.contextMenu LI.separator {
+
+}
+
+/*
+	Adding Icons
+	
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)
+*/

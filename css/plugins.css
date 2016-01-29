@@ -1,0 +1,66 @@
+/*	GLOBAL PLUGIN CSS
+	Last updated:	03/6/2010
+*/
+
+@import url(form/form.css);
+@import url(blog/blog.css);
+@import url(forum/forum.css);
+@import url(galleryview/galleryview.css);
+@import url(popupgallery/popupgallery.css);
+@import url(guestbook/guestbook.css);
+@import url(guestbook_iframe/guestbook_iframe.css);
+@import url(latestblogposts/latestblogposts.css);
+@import url(latestgallery/latestgallery.css);
+@import url(mailinglist/mailinglist.css);
+@import url(minicart/minicart.css);
+@import url(search/search.css);
+@import url(shop/shop.css);
+@import url(socialbookmarks/socialbookmarks.css);
+@import url(twitter/twitter.css);
+@import url(userpoll/userpoll.css);
+@import url(googlemaps/googlemaps.css);
+
+/*	Validation css */
+@import url(validation/validation.css);
+
+/*	In the event that they have an older nav.css file, we need to remove any list stlyes */
+	div#navbar ul li
+		{
+			list-style:none;
+		}
+
+/*	Global Widget Container */
+	div#widgetdiv 
+		{
+			/* Hide overflow */
+			overflow:hidden; 
+
+			/* Margin the widgets */
+			margin:10px auto;
+			
+			/* Pad the containers */
+			padding:0 5px;
+		}
+
+/*	Global Widget Margins & Font Settings */
+	div.sitewidget 
+		{
+			/* Add a margin at the bottom of the sitewidget container */
+			margin:0px 0px 20px 0px; 
+
+			/* Fix IE */
+			position:relative; 
+			top:0;
+		}
+	div.sitewidget p,
+	div.sitewidget
+		{
+			/* Set a default font size for our widgets */
+			font-size:12px;
+		}
+	div.sitewidget h4,
+	div.sitewidget h3
+		{
+			/* Set a default font size for widget titles */
+			font-size:14px;
+		}

@@ -1,0 +1,154 @@
+/* ----== Mr Site Blog Style ==---- */
+
+
+/* Generation 3 */
+div#bodyWrapper .BlogWrap
+	{
+	border:1px solid #C2C0C0;
+	border-bottom:0px;
+	margin:0px;
+	padding:0px;
+	display:block;
+	position:relative;
+	}
+div#bodyWrapper .post 
+	{
+		display:inline-block;
+		margin:0px; 
+		padding:0px; 
+		background:#f9f9f9;
+		border-top:1px solid #fff;
+		border-bottom:1px solid #C2C0C0;
+	}
+div#bodyWrapper .link-title 
+	{
+		margin:0; 
+		line-height:15px;
+		display:block; 
+		border:0px; 
+		padding:2px 14px 2px 29px;
+	}
+div#bodyWrapper .post-title 
+	{
+		margin:0; 
+		font-size:14px; 
+		line-height:15px;
+		background-image:url(images/icon_arrow.gif) no-repeat 10px .5em;
+		display:block;
+		border:0px;
+		padding:8px;
+	}
+div#bodyWrapper .post-body 
+	{
+		border-width:0 1px 1px 1px; 
+		border-bottom-color:#fff; 
+		padding:0px;
+		margin:0px;
+	}
+div#bodyWrapper .post p 
+	{
+		margin:0px;
+	}
+div#bodyWrapper p.post-footer 
+	{
+		margin:0; 
+		padding:2px 14px 2px 29px; 
+		border-width:1px; 
+		border-bottom:0px solid #eee;  
+		line-height:15px; 
+		text-align:right;
+	}
+div#bodyWrapper p.post-footer em 
+	{
+		display:block; 
+		float:left; 
+		clear:left; 
+		text-align:left;  
+		font-style:normal;
+	}
+/* ----== /Mr Site Blog Style ==---- */
+div.sitewidget.blogArchive div.blogArchive
+	{
+	background:#f0f0f0;
+	padding:10px;
+	margin:0 0 0px 0;
+	border-bottom:1px solid #e0e0e0;
+	}
+div.sitewidget.blogArchive div.blogHistory
+	{
+	padding:10px;
+	}
+
+div.sitewidget.blogArchive ul.PostArchiveList
+	{
+		margin:0px;
+		padding:0px;
+	}
+div.sitewidget.blogArchive ul.PostHistoryList
+	{
+		margin:0px 0px 0px 0;
+		padding:0px;
+	}
+div.sitewidget.blogArchive ul.PostArchiveList li,
+div.sitewidget.blogArchive ul.PostHistoryList li
+	{
+		list-style:none;
+		display:block;
+		padding:10px;
+		margin:0px;
+		border-top:1px solid #e0e0e0;
+	}
+	ul.PostHistoryList li.firstPost
+		{
+			border-top:0px;
+			padding-top:0px;
+		}
+	ul.PostArchiveList li
+		{
+		border-top:0px;
+		}
+div.sitewidget.blogArchive ul.PostArchiveList li ul,
+div.sitewidget.blogArchive ul.PostHistoryList li ul
+	{
+		padding:3px 0px 3px 5px;
+		display:none;
+		margin:0 0 0px 0;
+		border:0px;
+	}
+div.sitewidget.blogArchive ul.PostArchiveList li ul li,
+div.sitewidget.blogArchive ul.PostHistoryList li ul li 
+	{
+		font-size:11px;
+		border:0px;
+		padding:3px 0px 3px 5px;
+	}
+
+/* -------------------------------------------------------------------------- */
+div#topModule13 div.content	{padding:0px;}
+div.modWidget.blogArchive	{margin:0 0 0 0; border:0px; display:inline-block;}
+div.modWidget.blogArchive h4
+	{
+		margin:0px 0px 0px 0;
+		padding:0px;
+		font-size:14px;
+	}
+div.modWidget.blogArchive div.BlogRoll {float:left; width:25%; margin:0px; padding:0px; display:block;}
+div.modWidget.blogArchive div.BlogRoll div.BlogRollInner {padding:10px;}
+div.modWidget.blogArchive div.BlogRoll div.BlogRollInner ul {margin:5px 0px 0px 0px; padding:0px 0px 0px 0px;}
+div.modWidget.blogArchive div.BlogRoll div.BlogRollInner ul li {list-style:none; display:block; font-size:11px; border-bottom:1px dotted #e0e0e0; padding:3px;}
+
+
+/* Sidebar styles */
+div.blogListWrap					{margin:0 0 10px 0;}
+div.blogListWrap h5					{margin:0 0 5px 0; border-bottom:1px dotted #e0e0e0; padding:0 0 5px 0; font-size:14px;}
+ul.blogList							{margin:0px 0px 0px 0px; padding:0px; display:block;}
+ul.blogList li						{display:block; padding:2px 5px 2px 5px;}
+ul.blogList li ul					{padding:3px 0 5px 0; display:none;}
+ul.blogList li ul li				{padding:2px 0px 2px 8px; list-style:none;}
+ul.blogList li a.Archive			{font-weight:bold;}
+
+/* Blog post styles */
+div.blogPost						{margin:0px 0 20px 0; border-bottom:1px dotted #e0e0e0; padding:0px 0 20px 0;}
+h1.blogPost							{margin:5px 0 10px 0;}
+div.blogPost span.PostBody img		{margin:15px 0;}
+span.PostComments, span.PostDate	{text-transform:uppercase; letter-spacing:0.5pt; color:#c2c2c2; font-weight:normal;}

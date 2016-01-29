@@ -1,0 +1,887 @@
+/*	Booking tool CSS 27/05/2010
+----------------------------------*/
+/* body, html	{overflow-x:hidden;} */
+
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Selectmenu settings
+	------------------------------------------------------------------------------------------------------------------- */
+	.ui-selectmenu { display: block; position:relative; height:2em; text-decoration: none; overflow:hidden;}
+	.ui-selectmenu-icon { position:absolute; right:6px; margin-top:-8px; top: 50%; }
+	.ui-selectmenu-menu { padding:0; margin:0; list-style:none; position:absolute; top: 0; visibility: hidden; overflow: auto; }
+	.ui-selectmenu-open { visibility: visible; }
+	.ui-selectmenu-menu-popup { margin-top: -1px; }
+	.ui-selectmenu-menu-dropdown { }
+	.ui-selectmenu-menu li {padding:0; margin:0; display:block; border-top:1px dotted transparent; border-bottom:1px dotted transparent; border-right-width:0 !important; border-left-width: 0 !important; font-weight:normal !important; }
+	.ui-selectmenu-menu li a,.ui-selectmenu-status {line-height: 1.4em; display:block; padding:.3em 1em; outline:none; text-decoration:none; }
+	.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,
+	.ui-selectmenu-hasIcon .ui-selectmenu-status { padding-left: 20px; position: relative; margin-left: 5px; text-decoration:none;}
+	.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon { position: absolute; top: 1em; margin-top: -8px; left: 0; }
+	.ui-selectmenu-status { line-height: 1.4em; }
+	.ui-selectmenu-open li.ui-selectmenu-item-focus a {  }
+	.ui-selectmenu-open li.ui-selectmenu-item-selected { }
+	.ui-selectmenu-menu li span,.ui-selectmenu-status span { display:block; margin-bottom: .2em; }
+	.ui-selectmenu-menu li .ui-selectmenu-item-header { font-weight: bold; }
+	.ui-selectmenu-menu li .ui-selectmenu-item-content {  }
+	.ui-selectmenu-menu li .ui-selectmenu-item-footer { opacity: .8; }
+	/*for optgroups*/
+	.ui-selectmenu-menu .ui-selectmenu-group { font-size: 1em; }
+	.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label { line-height: 1.4em; display:block; padding:.6em .5em 0; font-weight: bold; }
+	.ui-selectmenu-menu .ui-selectmenu-group ul { margin: 0; padding: 0; }
+	/*	Some more IE fixes */
+	span.ui-selectmenu-item-icon							{display:block;left:0px; margin-left:0px !important;margin-left:-20px;}
+	a#RoomSelector-button span.ui-selectmenu-status			{margin-left:5px!important; margin-left:25px;}
+	li.RoomSelection										{border-top:1px solid #fff; border-bottom:1px solid #fff; padding-left:0px !important; padding-left:20px;}
+	li.RoomSelection span.ui-selectmenu-item-icon			{margin-left:0px !important;margin-left:-20px;}
+	.fg-button 												{outline: 0; margin:0 4px 0 0; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+	.fg-button .ui-icon 									{position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+	a.fg-button 											{font-size:12px; float:left; display:block; padding:5px 10px 5px 20px;}
+	/* remove extra button width in IE */
+	button.fg-button { width:auto; overflow:visible; }
+	.fg-button-icon-left { padding-left: 2.1em; }
+	.fg-button-icon-right { padding-right: 2.1em; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+	.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+	.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
+	.fg-buttonset { float:left; }
+	.fg-buttonset .fg-button { float: left; }
+	.fg-buttonset-single .fg-button, 
+	.fg-buttonset-multi .fg-button { margin-right: -1px;}
+	.fg-toolbar { padding: .5em; margin: 0;  }
+	.fg-toolbar .fg-buttonset { margin-right:1.5em; padding-left: 1px; }
+	.fg-toolbar .fg-button { font-size: 1em;  }
+	div.CallToActions										{margin:10px 0 10px 0;}
+	div.CallToActions button.ui-button						{padding:5px; cursor:pointer;}
+
+
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Booking container settings
+	------------------------------------------------------------------------------------------------------------------- */
+	table.BookingToolLayoutTable							{width:100%;margin:0px;border-collapse:collapse;border:0px;padding:0px;}
+		
+		/* 	-----------------------------------------------------
+		Widget and content padding, margins and other settings	*/		
+		div#navColumn div#CalendarEditor div.content,
+		div#mainColumn div#CalendarEditor div.content
+			{
+				border:0px;
+				padding:0px 0 0 0px;
+				margin:0 0px 0 0px;
+				min-height:150px !important; height:auto !important; height:150px;
+				display:block;
+			}
+		/*	Set a generic height before the content is loaded */
+		div.BookingToolBodyFull								{min-height:350px !important; height:auto !important; height:350px;}
+		div.BookingToolWidget								{margin-bottom:10px; margin-top:0px !important; margin-top:10px;}
+		
+		/*	Fix any silly template image settings */
+		div#homepage_wrap #mainColumn span.DescriptionImageWrapInner img {margin:0px;}
+
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Booking dialog settings
+	------------------------------------------------------------------------------------------------------------------- */	
+	div.ui-dialog											{margin-top:40px;}				/*	Positions the dialog box */
+	
+		/*	Dialog controls */
+		a#add_booking, a.MakeBookingButton					{float:right; margin:0;}		/*	All cancel buttons */
+		a.CancelBookingButton								{float:left; margin:0px;}		/*	All confirmation buttons */
+
+
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Font style overrides, for all major UI rolled parts of the booking tool
+	------------------------------------------------------------------------------------------------------------------- */	
+	table.ExtrasTableElements td, 
+	td.ShareThisCell, 
+	.fg-button, 
+	li#FirstTab a, 
+	li#SecondTab a, 
+	a#RoomSelector-button, 
+	a#RoomSelector-button, 
+	li.BookingToolTabs span.TabText, 
+	ul#RoomSelector-menu li a, 
+	div.calheader, 
+	.tooltip span, 
+	table.yui-calendar td, 
+	table.yui-calendar th
+		{
+			letter-spacing:0pt;
+			word-spacing:0pt;
+			line-height:auto;
+			text-transform:none;
+			font-style:normal;
+			text-decoration:none;
+		}
+	li#FirstTab a:hover, 
+	li#SecondTab a:hover, 
+	li#FirstTab a:active, 
+	li#SecondTab a:active
+		{
+			text-decoration:none;
+		}
+	li#FirstTab, li#SecondTab
+		{
+			text-transform:none;
+			letter-spacing:0pt;
+			word-spacing:0pt;
+			font-weight:normal;
+			font-size:100%;
+			line-height:1.3;
+			text-decoration:none;
+		}
+
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Calendar settings for standard, expanded and widget booking tools
+	------------------------------------------------------------------------------------------------------------------- */	
+	table.yui-calendar											{width:100%;}
+	div#CalendarEditor											{background-position:top;}
+	div#CalendarEditor div.content								{background:transparent;}
+	
+	/*	Calendar widths, and float settings */
+	.yui-calcontainer.groupcal.first-of-type.last-of-type		{margin:0px; padding:0px; width:100%;}
+	.yui-calcontainer.multi										{border:0px; padding:0px; margin:0px; background:transparent; z-index:1; position:relative; width:100%;}
+		/*	Body.expand	*/
+			body.expand .yui-calcontainer.multi					{width:100%;}
+					
+	.yui-calcontainer.groupcal.first-of-type					{margin:0px; padding:0px; float:left; width:49%;}														
+	.yui-calcontainer.groupcal.last-of-type						{margin:0px; padding:0px; float:right; width:49%;}
+			
+		/*	Body expand */
+			body.expand .yui-calcontainer.groupcal.first-of-type{}
+			body.expand .yui-calcontainer.groupcal.last-of-type	{}
+				
+	/*	IE6 fix	*/
+	div.first-of-type											{margin:0px; padding:0px; float:left; width:49%;}
+	div.last-of-type											{margin:0px; padding:0px; float:right; width:49%;}
+	/* div.first-of-type.last-of-type								{width:100%;} */
+	div#widgetdiv div.BookingToolWidget div.first-of-type	{width:100%;}
+				
+	tbody.calbody												{background:#fff;}
+	div.sub														{display:block; width:100%; margin:0px; padding:0px;text-align:center;}
+			
+	/*	Calendar headers - grabs styles from UI */
+	div.calheader 												{position:relative;}
+	div.calheader a.ui-icon.ui-icon-circle-arrow-w				{display:block; cursor:pointer; position:absolute; left:0px; top:0px;}
+	div.calheader a.ui-icon.ui-icon-circle-arrow-e				{display:block; cursor:pointer; position:absolute; right:0px; top:0px;}
+				
+	th.calhead													{padding:10px;}
+	th.calweekdaycell											{padding-top:5px; padding-bottom:5px;}
+				
+	/*	Tool elements */
+	li.insert.ui-widget-header									{border:0px; margin:0px; padding:5px 10px 5px 5px;}
+	div.BookingToolWidget h2.SelectCalendarHeader				{background:transparent;}
+	h2.SelectCalendarHeader span.MakeBooking					{font-size:12px; display:inline; padding:0 0 0 10px; font-weight:normal; display:none;}
+
+	/*	What happens to the layout when we have a widget? */
+		div.BookingToolBodyFull, div.BookingToolWidget											{position:relative;}
+		div.BookingToolWidget div#CalendarShortDescription										{padding:0px;}
+		div.BookingToolWidget div.RoomSelectorContainer											{margin:0px 0px 10px 0px;border-bottom:0px;padding:0;}
+	
+		div.BookingToolBodyFull div#CalendarShortDescription									{padding:0px;}
+		div.BookingToolBodyFull div.RoomSelectorContainer										{margin:10px 0px 0px 0px;border-bottom:0px;padding:10px 0px 15px 0px;}
+		
+		
+			div.BodyBookingTool	div.ShortDescriptionCopy										{float:left; width:55%;}
+			div.BodyBookingTool div.ShortDescriptionCopy table td								{padding:0 5px 3px 0;}
+				div.BodyBookingTool	div.ShortDescriptionCopy table td:first						{width:40%;}
+			div.BodyBookingTool	div.ShortDescriptionImageExtras									{float:right; width:40%;}
+			
+			/*	If the we've got a full page, then the dimensions change! */
+			body.expand div.BodyBookingTool	div.ShortDescriptionCopy							{width:65%;}
+			body.expand div.BodyBookingTool	div.ShortDescriptionImageExtras						{width:30%;}
+		
+		div.ShortDescriptionImage																{margin:0 0 10px 0;}
+	
+	/*	Showcase image */
+		div#CalendarShortDescription div.ShortDescriptionImage img								{width:100%;diplay:block;padding:0px;border:0px;}
+		div#CalendarShortDescription span.DescriptionImageWrap 									{display:block; width:100%; overflow:hidden; margin:0px 0px 0px 0px;}
+		div#CalendarShortDescription span.DescriptionImageWrap span.DescriptionImageWrapInner	{display:block;}		
+	
+	/*	Smaller images... not used yet */
+		div#ThumbnailList																		{float:right; margin:0 0 10px 10px;}
+		div#CalendarShortDescription span.DescriptionImageWrapSmall								{float:left; display:block; width:100px; height:70px; overflow:hidden; margin:0 10px 10px 0;}
+		div#CalendarShortDescription span.DescriptionImageWrapInnerSmall						{display:block;}
+		
+	/*	To fix our custom.css link colours, we need to add ui-widget-content class to the outer container */
+		div#CalendarManager.ui-widget-content										{border:0px; padding:0px; background:transparent;}
+		div#tabs.ui-widget-content													{border:0px; padding:0px; background:transparent;}
+		
+		
+		
+	
+	
+	div.RoomSelectorContainer						{padding:5px; width:200px;}
+	select#RoomSelector 							{width:180px;}
+	a#RoomSelector-button							{float:right; margin-top:0px !important; margin-top:0px; margin-bottom: 0px!important; margin-bottom:0px;}
+	div.BookingToolWidget a#RoomSelector-button		{float:left;}
+	
+	ul#RoomSelector-menu 							{z-index:20; background-position:top center;}
+	ul#RoomSelector-menu li a						{font-weight:normal;}
+	span.RoomSelectorDropdown						{padding:0px 0px 0px 0px;}
+	span.CalendarFolder								{display:block; padding:0px 0px 5px 0px; font-weight:bold; font-size:14px;}
+	ul.ui-state-default								{background-position:top center;}
+			
+			
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Calendar information page settings, including font styles
+	------------------------------------------------------------------------------------------------------------------- */			
+	/* Split out booking title into components */
+	div#CalendarShortDescription								{margin:0px 0px 10px 0px; background:transparent;}
+			
+	/*	Body preset text styles */
+	div#CalendarShortDescription a.DescriptionReadMore			{display:block;float:left;padding:5px 0 5px 20px;background:url(images/search-icon-blue.gif) no-repeat left;}
+	div#CalendarShortDescription h1, 
+	div#CalendarShortDescription h2, 
+	div#CalendarShortDescription h4, 
+	div#CalendarShortDescription h5								{margin:5px 0 5px 0;padding:0px;}
+																
+	div#CalendarShortDescription ul								{margin:0px;padding:0px 0px 0px 15px;}
+	div#CalendarShortDescription li								{margin:0px; padding:0px 0px 0px 0px; list-style:square; text-indent:0pt; width:100%; background-repeat:none;}
+
+	
+/* 	-------------------------------------------------------------------------------------------------------------------	
+	Tab and link settings
+	------------------------------------------------------------------------------------------------------------------- */
+	li#FirstTab a, li#SecondTab a, a#RoomSelector-button					{text-decoration:none; font-size:12px;}
+	li.BookingToolTabs														{position:relative; display:block; z-index:11;}
+	li.BookingToolTabs a													{position:relative; z-index:12; padding:0px; margin:0px;}
+	.ui-tabs .ui-tabs-nav li.BookingToolTabs a								{padding:0px;}
+	li.BookingToolTabs span.ui-icon											{position:absolute; z-index:5;display:block; padding:0px; left:6px; top:6px;}
+	li.BookingToolTabs span.TabText											{position:relative;z-index:10;float:left; display:block;font-size:12px;font-weight:normal;padding: 0.5em 1em 0.5em 2.2em;}
+		
+	li.ui-corner-top.ui-tabs-selected.ui-state-active a,
+	li.ui-corner-top.ui-tabs-selected.ui-state-active span,
+	li.ui-corner-top.ui-tabs-selected.ui-state-hover a:hover,
+	li.ui-corner-top.ui-tabs-selected.ui-state-hover span:hover				{cursor:default;}
+	
+			
+			
+				
+			span.LightBoxLink	{cursor:pointer;}
+			
+			
+
+	/* ---------------------------------------------------------- */
+	div.addEventDiv
+		{
+			margin:0px;
+			padding:12px 0px 2px 0px;
+		}    
+	
+	div.sitewidget.BookingTool
+		{
+			min-height:240px;
+		}
+	
+	
+	/*	Table structures */
+		/*	This is the table on the user front end, shows the room availability and other extras */
+		table.BookingInfoExtraList
+			{
+				background-position:top;
+				width:100%;
+				margin:0 0 10px 0;
+			}
+			table.BookingInfoExtraList span.ListElementRight
+				{
+					text-align:right;
+				}
+				span.TableTitle	{font-weight:bold;}
+			table.ExtrasTableElements.ui-state-default.ui-corner-all,
+			table.ExtrasTableElements.ui-widget-header.ui-corner-all {background-position:top;width:100%;}
+			table.ExtrasTableElements.ui-state-default.ui-corner-all td	{padding:3px 10px;}
+			
+			table.ExtrasTableElements.ui-widget-header.ui-corner-all td	{padding:5px 10px; font-size:14px;}
+				table.ExtrasTableRoomCount.ui-state-default.ui-corner-all {border-top:0px;}
+		
+		table.ExtrasTableElements td	
+			{
+				font-size:12px; 
+				padding:3px 5px;
+				letter-spacing:0pt;
+				word-spacing:0pt;
+				line-height:15px;
+				font-style:normal;
+				text-transform:none;
+				text-decoration:none;
+			}
+
+		table.OuterEventsTable
+			{
+				width:100%;
+				margin:0px; 
+				padding:0px;
+				border:0px;
+			}
+			/*	Booking tool information dialog */
+			table.BookingInfo
+				{
+					width:100%;
+					margin:15px 0px 20px 0; 
+					padding:0px;
+					border:0px;
+				}
+			table.BookingInfo div#calendarDescription
+				{
+					margin:0px;
+					padding:0px 15px 20px 0;
+				}
+				table.BookingInfo div#calendarDescription img
+				{
+					width:100%;
+				}
+				table.BookingInfo div.calendarExtrasRooms
+					{
+						padding:0px 15px 0px 15px;
+						margin:0 0 10px 0;
+					}
+				table.BookingInfo div.calendarExtrasPrice
+					{
+						background-position:top left;
+						padding:0px 15px 0px 15px;
+						margin:0 0 10px 0;
+					}
+				table.BookingInfo div#calendarDescription p
+					{
+						margin-top:0px;
+						padding-top:0px;
+					}
+				table.BookingInfo h3.RightCellTitleNOR
+					{
+						margin:0px 0 0px 0;
+						padding:0px;
+					}
+				table.BookingInfo h3.RightCellTitle
+					{
+						margin:10px 0 0px 0;
+						padding:0px;
+					}
+					table.BookingInfo h3.NumberOfRoomsAvailable
+						{
+							text-align:right;
+						}
+				table.BookingInfo table.BookingInfoExtrasPrice						{width:100%; margin:0px; padding:0px;}
+				table.BookingInfo table.BookingInfoExtrasPrice td.NumberOfRooms 	{vertical-align:middle; padding:0px;}
+				table.BookingInfo table.BookingInfoExtrasPrice h3	{font-size:16px;}
+				table.BookingInfo ul#AvailableExtras
+					{
+						margin:10px 0 15px 0;
+						padding:0px 0px 0px 15px;
+					}
+					table.BookingInfo ul#AvailableExtras li
+						{
+							margin:0 0 5px 0;
+						}
+						span.ListElementleft	{float:left; display:block;text-align:left;}
+						span.ListElementRight	{float:right; display:block; text-align:right; font-weight:bold;}
+			/*	Booking tool booking form dialog */
+			table.OuterEventsTable td
+				{
+					vertical-align:top;
+					margin:0px;
+					padding:0px;
+				}
+				
+		table.EventBookingDate, table.EventBookingForm,table.EventBookingPrice
+			{
+				width:100%;
+				padding:0px;
+				border:0px;
+			}
+			
+			table.EventBookingPrice td.StandardRowwithPadding
+				{
+					padding:2px 10px;
+				}
+		
+		
+		div.EventBookingExtras
+			{
+				/* border:1px solid #139700; */
+				/* background:#f1fdd7; */
+				margin:0 20px 10px 0px;
+				padding:0px;
+				position:relative;
+			}
+		/*
+			div.EventBookingExtras span.EventExtrasIcon
+				{
+					
+					background:url(images/add_big.png) no-repeat top left;
+					width:24px;
+					height:24px;
+					position:absolute;
+					right:-12px;
+					top:-12px;
+					display:block;
+					
+				}
+				*/
+		table.EventBookingExtras
+			{
+				width:100%;
+			}
+			table.EventBookingExtras td
+				{
+					vertical-align:middle;
+				}
+			table.EventBookingDate td, table.EventBookingPrice td
+				{
+					vertical-align:top;
+					padding:0px;
+					margin:0px;
+					font-size:12px;
+				}
+				table.EventBookingDate	{margin-top:10px; margin-bottom:10px;}
+		
+		div.EventBookingForm
+			{
+				background:#fffbe5;
+				border:1px solid #e0e0e0;
+				padding:10px;
+				margin:0 0 10px 0;
+			}
+			div#dialog.ui-dialog-content.ui-widget-content p, div#dialog.ui-dialog-content.ui-widget-content
+				{
+					color:#686868;
+				}
+			div.EventBookingForm *, td.ShareThisCell
+				{
+					color:#686868;
+				}
+		div.EventBookingPrice
+			{
+				margin:0 0 10px 0;
+				position:relative;
+			}
+			div.EventBookingPrice span.EventPriceIcon
+				{
+					/* background:url(images/calculator.png) no-repeat top left; */
+					width:24px;
+					height:24px;
+					position:absolute;
+					right:-12px;
+					top:-12px;
+					display:block;
+				}
+	
+		/* Prices */
+		table.BookingPrice
+			{
+				width:100%;
+				text-align:right;
+			}
+			table.BookingPrice tr.FinalPriceofBooking
+				{
+					
+				}
+				table.BookingPrice td
+					{
+						padding-right:10px;
+					}
+				table.BookingPrice tr.BookingPriceRow td		{padding-top:4px; padding-bottom:4px;}
+				table.BookingPrice tr.FinalPriceofBooking td	
+					{
+						padding-top:8px; 
+						padding-bottom:8px; 
+						border-left:0px; 
+						border-right:0px; 
+						border-bottom:0px; 
+						font-weight:bold; 
+						font-size:14px;
+						background:#fff;
+						color:#d51c1c;
+					}
+				table.BookingPrice td.FinalPriceofBookingCell,
+				table.BookingPrice td.BookingLeftCell			{padding-left:10px; width:67%;}
+				
+			td.BookingLabelCell	{width:60px;}
+			
+			table.BookingPrice td.ui-widget-content.ui-state-active	{border-left:0px; border-right:0px; background-image:none;}
+			
+			table.BookingPrice tr.BookingExtrasRow span.ui-icon
+				{
+					display:block; float:right;
+					margin-right:5px;
+				}
+			span.ExtrasItemSpan
+				{
+					display:block; 
+					float:right;
+					width:120px;
+					text-align:right;
+					font-weight:bold;
+				}
+	
+		span.LoadingSpan
+			{
+				position:relative;
+				top:80px;
+				display:block;
+				text-align:center;
+			}
+			span.LoadingSpan img
+				{
+					display:block;
+					margin-left:auto;
+					margin-right:auto;
+					margin-bottom:20px;
+				}
+				
+				
+				
+				
+				
+	/*	Share this */
+	div.ShareThisPage	{margin:0px 0 0 0; padding-top:10px; width:100%;}
+	div.ShareThisPage table	{width:100%; margin:0px;}
+	td.ShareThisCell	{padding-right:10px; font-weight:bold; font-size:12px;}
+	span.SocialIcon
+		{
+			cursor:pointer;
+			width:16px;
+			height:16px;
+			display:block;
+			float:left;
+			margin:0 5px 0 0;
+		}
+		span.SocialIcon.FaceBookIcon 	{background:url(images/icons/16/facebook.png) no-repeat top left;}
+		span.SocialIcon.BeboIcon 		{background:url(images/icons/16/bebo.png) no-repeat top left;}
+		span.SocialIcon.TwitterIcon 	{background:url(images/icons/16/twitter.png) no-repeat top left;}
+		span.SocialIcon.SkypeIcon 		{background:url(images/icons/16/skype.png) no-repeat top left;}
+		span.SocialIcon.MSNIcon 		{background:url(images/icons/16/msn.png) no-repeat top left;}
+		span.SocialIcon.DiggIcon 		{background:url(images/icons/16/digg.png) no-repeat top left;}
+		span.SocialIcon.StumbleIcon 	{background:url(images/icons/16/stumbleupon.png) no-repeat top left;}
+		span.SocialIcon.DeliciousIcon 	{background:url(images/icons/16/delicious.png) no-repeat top left;}
+		span.SocialIcon.RedditIcon		{background:url(images/icons/16/reddit.png) no-repeat top left;}
+	
+/*	TOOLTIPS */
+.tooltip {
+	position: absolute;
+	z-index: 3000;
+	font-size:12px;
+	width:250px;
+}
+.contextMenu {
+	width:250px;
+	overflow:hidden;
+}
+
+.ui-tooltip {
+	position: absolute;
+	z-index: 3000;
+	overflow:hidden;
+	padding:5px 10px;
+}
+.ui-tooltip p {margin:0px; padding:0px; color:inherit;}
+
+/*	Fix IE7 width issue */
+*:first-child+html .tooltip {width:250px;}
+*:first-child+html .contextMenu {width:250px;}
+.tooltip, x:-moz-any-link, x:default {width:auto;}
+.contextMenu, x:-moz-any-link, x:default {min-width:250px; width:auto;}
+
+span.ToolTips_DateInterval		{font-weight:bold; background:url(images/date_magnify.png) no-repeat left; display:block; padding:3px 0 3px 20px; float:left; margin:0 0 5px 0;}
+	
+	td.DateCalendar		{background:url(images/date_magnify.png) no-repeat left; width:23px; height:20px; vertical-align:top; padding-bottom:5px;}
+	td.DialogSpace 		{width:23px; height:16px;}
+	td.SelectedInterval	{font-size:13px; padding:3px 0; vertical-align:middle;}
+	td.ui-widget-header.SelectedInterval	{border:0px; background:transparent;}
+	
+	table.InnerEventTable			{margin:0px; padding:0px;}
+	table.SelectedDateTableHeader	{margin:0 10px !important; margin:0px; font-size:12px;}
+	
+	table.HoverDialogTable.ui-widget-header.ui-corner-all	{background-image:none;}
+	table.InnerEventTable.ui-widget-header					{border-left:0px; border-right:0px; border-bottom:0px;}
+	
+	/*	OUTER TABLE */
+		table.HoverDialogTable									{margin:0px; padding:0px; border-width:1px; width:100%;}
+		table.HoverDialogTable td								{margin:0px; padding:0px;}
+			table.SelectedDateTableHeader						{margin:3px 10px 0px 10px;}
+			table.SelectedDateTableHeader td					{padding:0px; margin:0px;}
+		table.InnerEventTable td								{padding:0 5px !important; padding:0px; font-weight:normal;}
+		table.InnerEventTable td.AvailableToMakeABooking		{padding:0 10px !important; font-size:12px; font-weight:bold;}
+	
+	table.InnerEventTable	{background:#fff; padding:0px; margin:0px; width:100%;}
+	
+	table.InnerTable		{padding:0px; margin:0px; border-collapse:collapse; border:0px; width:100%; display:block; position:relative;}
+	table.InnerTable td		{margin:0px; padding:0px;}
+		td.Table_LeftCol	{width:100px;}
+		td.Table_RightCol	{text-align:right;}
+		
+	table.InnerEventTable	{width:100%; margin:0px; padding:0px;}
+	table.InnerEventTable td {padding:3px 5px !important;font-size:12px;}
+	
+	/*	CALENDAR FIXES */
+		td.calcell div	{text-align:center;}
+		
+	
+	
+	span.TableLabel		{font-weight:bold; padding-right:10px;}
+	span.SelectedDate, span.SelectedDateFinal	{font-weight:bold;}
+	
+	table.EventSubContainer
+		{
+			width:100%;
+			margin:0 0 3px 0;
+			border-width:1px;
+		}
+		table.EventSubContainer td
+			{
+				padding:8px 8px 0px 8px;
+			}
+		
+	
+.ui-tabs.ui-widget.ui-widget-content.ui-corner-all
+	{
+		border:0px;
+		padding:0px;
+		margin:5px 0 10px 0;
+	}
+div.ui-tabs-panel.ui-widget-content.ui-corner-bottom
+	{
+		padding:0px 0 15px 0px;
+		margin:0px;
+	}
+	/*	This fixes our tabs in IE6 */
+	div#tabs	{border:0px;}
+	div#tabs div.BookingInformation, div#tabs div.MakeBooking
+	{
+		padding:0px 0 15px 0px;
+		margin:0px;
+	}
+	
+/*	LOADER IMAGE */
+	span.LoadingBookingTool
+		{
+			display:block;
+			margin:50px;
+		}
+	span.LoadingBookingToolTable
+		{
+			position:absolute; 
+			top:20%;
+			display:block;
+			margin:50px 50px 0px 50px;
+		}
+	span.LoaderImage
+		{
+			background:url(images/ajax-loader.gif) no-repeat top left;
+			width:32px;
+			height:32px;
+			display:block;
+			margin:50px auto 50px auto;
+		}
+		/*	*/
+		/*	--==00==-- */
+			span.LoadingBookingToolTable	{left:35%;}
+			*:first-child+html span.LoadingBookingToolTable {left:-60px;}
+			span.LoadingBookingToolTable, x:-moz-any-link, x:default {left:35%;}
+			/*\*/ * html span.LoadingBookingToolTable { left:-100px; } /**/
+		/*	--==00==-- */
+		
+	span.LoaderText
+		{
+			font-size:14px;
+			text-align:center;
+			display:block;
+			font-weight:bold;
+		}
+	
+	div.input_holder
+		{
+			margin:10px 0 !important; margin:10px 0 0 0;
+		}
+	
+	td.BookingFormValue input, textarea.EventBookingForm, select.g3select
+		{
+			border:1px solid #e0e0e0;
+			padding:5px;
+			background:#fff;
+			-moz-border-radius: 2px; -webkit-border-radius: 2px; 
+			line-height:15px;
+			word-spacing:0pt;
+			letter-spacing:0pt;
+			text-transform:none;
+			font-style:normal;
+			font-weight:normal;
+			font-family:Arial, Helvetica, sans-serif; 
+			font-size:12px;
+		}
+	
+	textarea.EventBookingForm
+		{
+			width:140px;
+			height:70px;
+		}
+	
+	td.BookingFormValue input:hover, textarea.EventBookingForm:hover, select.g3select:hover
+		{
+			border-color:#d0cfcf;
+		}
+	td.BookingFormValue input:focus, textarea.EventBookingForm:focus, select.g3select:focus
+		{
+			background:#fffdef;
+			border-color:#c4c1b2;
+		}
+	
+/*	Selected date range */
+	table.selected_date_static	{}
+	table.selected_date_static td.calendarIcon	{background:url(images/date_magnify.png) no-repeat left; width:16px;}
+	table.selected_date_static td.bold	{font-weight:bold;}
+	
+	input.hasDatepicker					{border:1px solid #e0e0e0; background:#fff; padding:5px; color:#686868; cursor:pointer;}
+	input.hasDatepicker:hover			{color:#202020;}
+	
+	td.EventViewDetails
+		{
+			font-size:14px;
+		}
+		
+		table.ViewCellDetails				{width:100%;}
+		table.ViewCellDetails td			{vertical-align:top;}
+		
+/*	Booking confirmed table */	
+	table.add_edit_extras_table
+		{
+			border-collapse:collapse;
+			width:100%;
+			margin:5px 0;
+		}
+		table.add_edit_extras_table td		{vertical-align:top;}
+		td.add_edit_extras_table_left
+			{
+				padding:10px;
+				border:1px solid #e0e0e0;
+				background:#f1fdd7;
+			}
+		td.add_edit_extras_table_right
+			{
+				padding:3px 5px;
+				background:#f9f9f9;
+				border:1px solid #e0e0e0;
+				padding:10px;
+			}
+		td.add_edit_extras_table_right.details
+			{
+				padding:3px 5px;
+				background:#fffbe5;
+				border:1px solid #e0e0e0;
+				padding:10px;
+			}
+			td.add_edit_extras_table_right td.label_td
+				{
+					font-weight:bold;
+				}
+				td.add_edit_extras_table_right td#priceTD table
+					{
+						width:100%;
+						margin:0px;
+						padding:0px;
+						border-collapse:collapse;
+					}
+					td.add_edit_extras_table_right td.paid_td, td.add_edit_extras_table_right td.right_td
+						{
+							text-align:right;
+						}
+					td.add_edit_extras_table_right.details table	{width:100%;}
+					
+					
+	span.StaticLoaderImage					{display:block; margin:30px auto;}
+	div.Event_Loader span.StaticLoaderImage {background:url(images/EventLoader.gif) no-repeat top left; width:320px; height:100px;}
+	div.Hotel_Loader span.StaticLoaderImage {background:url(images/HotelLoader.gif) no-repeat top left; width:320px; height:100px;}
+	div.Villa_Loader span.StaticLoaderImage {background:url(images/VillaLoader.gif) no-repeat top left; width:320px; height:100px;}
+	div.PayPal_Loader span.StaticLoaderImage {background:url(images/PayPalLoader.gif) no-repeat top left; width:320px; height:100px;}
+	span.AnimatedLoaderImage				{background:url("images/ajax-loader(6).gif") no-repeat top left; width:16px; height:11px; margin:10px auto; display:block;}
+	div.BookingDetailsLoader span.LoaderText	{font-size:12px; display:block; margin:0 auto 20px auto;}
+	
+	span.buttonCenter	{display:block; margin:0 auto;}
+	
+	p.CustomMessageContext
+		{
+			line-height:15px;
+			margin:0px;
+			font-size:12px;
+			font-weight:normal;
+			text-decoration:none;
+			word-spacing:0pt;
+			letter-spacing:0pt;
+			padding:5px 8px 8px 8px;
+		}
+		
+		
+		
+	/* Some new context menus */
+	div.contextPopup.ui-state-active.ui-corner-all				{font-size:12px; background-position:top center; background#fff;}
+	div.contextPopupRow											{padding:0 0 0px 0; overflow:hidden;}
+	div.contextPopupDate.ui-widget-header						{padding:8px 8px 8px 8px; background-position:top center; border-top:0px; border-right:0px; border-left:0px;}
+	div.contextPopupRowMessage									{padding:8px 8px 8px 8px;}
+	div.contextPopupBody.ui-state-active						{border-top:0px; border-right:0px; border-bottom:0px; border-left:0px; background:#fff;}
+	div.eventEntry												{position:relative; background:#fff;}
+	div.ThisEventTitle											{}
+	div.contextPopupInnerBody									{padding:8px 8px 0px 8px;}
+	span.ThisEventColour 										{width:16px; height:16px; display:block; position:absolute; top:0px; right:0px;}
+	
+	.contextMenu UL												{margin:0px; padding:0px;}
+	.contextMenu LI												{list-style:none; margin:0px; padding:0px; position:relative;}
+	.contextMenu LI	a											{display:block; width:100%; padding:8px;}
+	.contextMenu LI a span.ui-icon								{position:absolute; top:7px; left:8px;}
+	.contextMenu LI a span.ui-text								{padding:8px 8px 8px 25px;}
+	.contextMenu LI.ui-state-active								{border:0px;}
+	.contextMenu LI.ui-context-hover,
+	.contextMenu LI:hover										{background:#fffbe5;}
+		
+		div.contextPopup table td								{vertical-align:top;}
+		table.contextPopupTable									{width:100%;}
+		table.contextPopupTable	td.Table_RightCol				{text-align:right; font-weight:bold;}
+		table.contextPopupTable td.contextPopupEventTitle		{font-weight:bold; font-size:13px;}
+		table.contextPopupTable div.EventColourPlaceholder		{position:relative;}
+		table.contextControls td								{vertical-align:middle;}
+		td.contextIconCell										{vertical-align:middle; padding-top:4px;}
+	
+		
+	/*	Dialog, default styles */
+	h1.DialogTitle.DialogTitlewithLoader						{background:url("images/ajax-loader(6).gif") no-repeat right 10px; display:block; float:left; padding-right:30px;}
+	
+	div.ui-dialog-content h1.DialogTitle						{margin:0px 0 10px 0; font-size:20px; color:#686868; line-height:25px;}
+	div.ui-dialog-content h1.DialogTitle.noTopMargin			{margin:0px 0 10px 0;}
+	div.ui-dialog-content h2.DialogTitleDates.ui-state-active	
+		{
+			color:#686868; 
+			font-size:16px; 
+			font-weight:bold; 
+			margin:10px 0 10px 0;
+			border:0px;
+			padding-bottom:10px;
+			background-image:none;
+			background:transparent;
+		}
+		h1.DialogTitle span.noVacancies							{padding:0px 0px 0px 15px;font-size:14px; color:#e61e1e;}
+		div.ui-dialog-content h2.DialogTitleDates.ui-state-active span.separatorSpan 	{font-style:italic; font-weight:normal;}
+		div.ui-dialog-content h3.DialogTitleExtras,
+		table.ExtrasTableElements h3.DialogTitleExtras	{font-size:14px; font-weight:bold; margin:0 0 10px 0; padding:0px; line-height:15px;}
+		
+	div.ui-dialog-content.ui-widget-content table.DialogTable							{margin:10px 0 10px 0; width:100%;}
+	div.ui-dialog-content.ui-widget-content table.DialogTableControl					{margin:10px 0;}
+	table.EventBookingForm td	{vertical-align:middle;}
+	
+	/*	*/
+	div.ui-dialog-content #divAddEvent .fl	{width:100%; padding:0px;}
+	
+	/*	Available extras pane */
+	div.DialogAvailableExtras				{margin-bottom:10px; padding:10px; border-bottom:1px solid #e0e0e0;}
+	div.PriceofBooking						{padding:10px 0 0px 0px;}
+		div.PriceofBooking h3.DialogTitleExtras	{padding-left:10px;}
+		
+	div.EventBookingExtras.DialogAvailableExtras.ui-corner-all.ui-state-default,
+	div.EventBookingExtras.PriceofBooking.ui-corner-all.ui-state-default {background-position:top center; background-image:none;}
+	
+	/* 	*/
+	div.PreviewContent				{width:100%;}
+	table.PreviewDialogPopup		{width:100%;}
+	table.PreviewDialogPopup td		{vertical-align:top;}
+	table.PreviewDialogPopup td.DialogPreviewPrice	{text-align:right;}
+	
+	/*	*/
+	div.PreviewDialogExtras.ui-widget-header.ui-corner-all.ui-state-default	{padding:10px;}
+	table.PreviewDialogExtras 		{width:100%;}
+	table.PreviewDialogExtras td	{padding:0px 0px 5px 0;}
+	

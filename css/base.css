@@ -1,0 +1,357 @@
+/* -- Mr Site Std Template -- */
+/* -- me107 - Beautifully Simple Sand Powered ----*/
+
+/* ----------------------------- Template reset - */
+body{margin:0;padding:0;}div.tabatha_wrap{width:840px;margin:0 auto;}.clear{clear:both;margin:0;padding:0;}#mainheader_wrap{width:850px;height:150px;margin:0 auto;padding:0;overflow:hidden;}.tabclear{clear:both;margin:0;padding:0;height:1%;}.hidden{display:none;margin:0;padding:0;}
+
+/* ----------------------------- Typography - */
+body					{font-family: Lucida Grande, Arial, Helvetica, sans-serif; font-size:12px; }
+p						{}
+h1						{}
+h2						{}
+h3						{}
+h4						{}
+h5						{}
+h6						{}
+
+/* ----------------------------- Template colours - */
+body, body p			{color:#535353;}
+a:link					{color:#535353; text-decoration:underline;}
+a:visited				{color:#535353; text-decoration:underline;}
+a:active				{color:#535353; text-decoration:underline;}
+a:hover					{color:#535353; text-decoration:underline;}
+#footer a:link			{color:#535353; text-decoration:underline;}
+#footer a:visited		{color:#535353; text-decoration:underline;}
+#footer a:active		{color:#535353; text-decoration:underline;}
+#footer a:hover			{color:#535353; text-decoration:underline;}
+#synopsis,
+#synopsis p				{color:#535353;}
+
+/* ----------------------------- Template variants - */
+body {background: #E5E1C4;}
+div.tabatha_wrap{width:850px;margin:0 auto;}
+#homepage {background:#;}
+#mainHeader1 {height: 150px;padding: 0;margin: 0;background: url("../images/1header.jpg") top no-repeat; }
+
+#mainHeader2 {height: 150px;padding: 0;margin: 0;background: url("../images/2header.jpg") top no-repeat; }
+
+#mainHeader3 {height: 150px;padding: 0;margin: 0;background: url("../images/3header.jpg") top no-repeat; }
+
+#mainHeader4 {height: 150px;padding: 0;margin: 0;background: url("../images/4header.jpg") top no-repeat; }
+
+#mainHeader5 {height: 150px;padding: 0;margin: 0;background: url("../images/5header.jpg") top no-repeat; }
+
+#mainHeader6 {height: 150px;padding: 0;margin: 0;background: url("../images/6header.jpg") top no-repeat; }
+
+#mainHeader7 {height: 150px;padding: 0;margin: 0;background: url("../images/7header.jpg") top no-repeat; }
+
+#mainHeader8 {height: 150px;padding: 0;margin: 0;background: url("../images/8header.jpg") top no-repeat; }
+
+#mainHeader9 {height: 150px;padding: 0;margin: 0;background: url("../images/9header.jpg") top no-repeat; }
+
+#mainHeader10 {height: 150px;padding: 0;margin: 0;background: url("../images/10header.jpg") top no-repeat; }
+
+#mainHeader11 {height: 150px;padding: 0;margin: 0;background: url("../images/11header.jpg") top no-repeat; }
+
+#mainHeader12 {height: 150px;padding: 0;margin: 0;background: url("../images/12header.jpg") top no-repeat; }
+
+#mainHeader13 {height: 150px;padding: 0;margin: 0;background: url("../images/13header.jpg") top no-repeat; }
+
+#mainHeader14 {height: 150px;padding: 0;margin: 0;background: url("../images/14header.jpg") top no-repeat; }
+
+#mainHeader15 {height: 150px;padding: 0;margin: 0;background: url("../images/15header.jpg") top no-repeat; }
+
+#mainHeader16 {height: 150px;padding: 0;margin: 0;background: url("../images/16header.jpg") top no-repeat; }
+
+#mainHeader17 {height: 150px;padding: 0;margin: 0;background: url("../images/17header.jpg") top no-repeat; }
+
+#mainHeader18 {height: 150px;padding: 0;margin: 0;background: url("../images/18header.jpg") top no-repeat; }
+
+#mainHeader19 {height: 150px;padding: 0;margin: 0;background: url("../images/19header.jpg") top no-repeat; }
+
+#mainHeader20 {height: 150px;padding: 0;margin: 0;background: url("../images/20header.jpg") top no-repeat; }
+
+#mainHeader21 {height: 150px;padding: 0;margin: 0;background: url("../images/21header.jpg") top no-repeat; }
+
+#mainHeader22 {height: 150px;padding: 0;margin: 0;background: url("../images/22header.jpg") top no-repeat; }
+
+#mainHeader23 {height: 150px;padding: 0;margin: 0;background: url("../images/23header.jpg") top no-repeat; }
+
+#mainHeader24 {height: 150px;padding: 0;margin: 0;background: url("../images/24header.jpg") top no-repeat; }
+
+#mainHeader25 {height: 150px;padding: 0;margin: 0;background: url("../images/25header.jpg") top no-repeat; }
+
+#mainHeader26 {height: 150px;padding: 0;margin: 0;background: url("../images/26header.jpg") top no-repeat; }
+
+#mainHeader27 {height: 150px;padding: 0;margin: 0;background: url("../images/27header.jpg") top no-repeat; }
+
+#mainHeader28 {height: 150px;padding: 0;margin: 0;background: url("../images/28header.jpg") top no-repeat; }
+
+#mainHeader29 {height: 150px;padding: 0;margin: 0;background: url("../images/29header.jpg") top no-repeat; }
+
+#mainHeader30 {height: 150px;padding: 0;margin: 0;background: url("../images/30header.jpg") top no-repeat; }
+
+#mainHeader31 {height: 150px;padding: 0;margin: 0;background: url("../images/31header.jpg") top no-repeat; }
+
+#mainHeader32 {height: 150px;padding: 0;margin: 0;background: url("../images/32header.jpg") top no-repeat; }
+
+#mainHeader33 {height: 150px;padding: 0;margin: 0;background: url("../images/33header.jpg") top no-repeat; }
+
+#mainHeader34 {height: 150px;padding: 0;margin: 0;background: url("../images/34header.jpg") top no-repeat; }
+
+#mainHeader35 {height: 150px;padding: 0;margin: 0;background: url("../images/35header.jpg") top no-repeat; }
+
+#mainHeader36 {height: 150px;padding: 0;margin: 0;background: url("../images/36header.jpg") top no-repeat; }
+
+#mainHeader37 {height: 150px;padding: 0;margin: 0;background: url("../images/37header.jpg") top no-repeat; }
+
+#mainHeader38 {height: 150px;padding: 0;margin: 0;background: url("../images/38header.jpg") top no-repeat; }
+
+#mainHeader39 {height: 150px;padding: 0;margin: 0;background: url("../images/39header.jpg") top no-repeat; }
+
+#mainHeader40 {height: 150px;padding: 0;margin: 0;background: url("../images/40header.jpg") top no-repeat; }
+
+#mainHeader41 {height: 150px;padding: 0;margin: 0;background: url("../images/41header.jpg") top no-repeat; }
+
+
+/* ----------------------------- Widget variants - */
+input#searchText {color:#000;}
+div#widgetdiv {margin:0px; padding:0px;}
+div.sitewidget {padding:0px; border-top:1px solid #888251;}
+div.sitewidget h4		{font-size:14px; font-weight:bold; margin:10px 0px 8px; padding:0px;}
+
+/* ----------------------------- Template Structure - */
+
+
+
+#mainHeaderWrapper {
+	text-align: center;
+	background: #C0BB8D;
+	border-bottom: 1px solid #E3E1D3;
+	padding: 0;
+	margin: 0;	
+}
+
+
+
+#synopsisWrapper {
+	text-align: center;
+	background: #ACA677;
+	border-bottom: 1px solid #888251;
+	padding: 0;
+	margin: 0;	
+}
+
+#synopsis {
+	font-size: 12px;
+	text-align: center;
+	width: 840px;
+	padding: 10px 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: #ACA677;
+	margin-bottom:10px;
+}
+
+#synopsis p {	
+	font-size: 13px;
+	margin: 0;
+	padding: 0;	
+}
+
+#mainColumnWrapper {
+	text-align: center;
+	padding: 10px 0 10px 0;
+	margin: 0;
+}
+
+#columnWrapper {
+	text-align: left;
+	width: 850px;
+	padding: 0;
+	margin:0 auto;
+}
+
+#mainWrapper {
+	padding: 0;
+	margin: 0;
+	}
+
+
+#navColumn {
+	font-size: 12px;
+	text-align: left;
+	float: left;
+	width: 240px;
+	padding: 0;
+	}
+
+#mainColumn {
+	font-size: 12px;
+	text-align: left;
+	float: right;
+	width: 590px;
+	padding: 0;
+	}
+	
+	#mainColumn .content {margin:10px;}
+	#navColumn .content {margin:0 10px;}
+
+
+/*---------------------------------------------------------------------------------
+Global Items
+---------------------------------------------------------------------------------*/
+
+#footerWrapper {
+	text-align: center;
+	padding: 0;
+	margin: 0;	
+	border-top: 1px solid #C0BB8D;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+	width: 840px;
+	padding: 10px 0 20px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer p {
+	padding: 0;
+	margin: 0;
+}
+
+.clear {
+	height: 0;
+	width: 0;
+	line-height: 0;
+	clear: both;
+	font-size: 0;
+}
+
+
+
+/* ----== Standard SideBar Nav CSS ==---- */
+/*
+#navbar ul {margin:0; padding:0;}
+#navbar {width:100%;}
+#navbar li a {text-decoration: none; display: block; padding:8px 0 0 10px;}	
+#navbar li a:link, #navbar li a:visited {display: block;}
+#navbar li a span {display:block;}
+#navbar li ul li, #navbar li ul, #navbar li ul li a {border:0;}
+#navbar li ul li a span {margin-left:10px;}
+*/
+/* ----== /Standard SideBar Nav CSS ==---- */
+
+/* ----== Mr Site Template Blog Style ==---- */
+.post-title {color:#666633;}
+.post-title {border:1px dotted #535353;}
+.post {border:1px dotted #535353;}
+.post-body {border:1px dotted #535353;}
+p.post-footer {border:1px dotted #535353;}
+/* ----== /Mr Site Template Blog Style ==---- */
+
+/* ----== Forum styles ==---- */
+table.ForumTable {background:#ffffff; border-color#000;}
+div.ThreadContainer {background:#ffffff; border-color:#000;}
+div.ThreadContainer_NewTopic {border-color:#000;}
+div.FooterContainer_Inner {background:#fff;border-color:#000;}
+div.FooterContainer_Credits {border-bottom:1px solid #000;padding:5px;text-align:left;}
+div.FooterContainer_Actions {border-color:#000;}
+p.FooterCopy {text-align:center;font-size:14px;}
+body.forum p {color: #666633;}
+body.forum a {color: #535353;}
+/* ----== /Forum styles ==---- */
+
+
+/* ----== Page Expansion ==---- */
+body.expand div#mainColumn {width:850px; border:0;}
+body.expand div#navColumn {display:none;}
+body.expand div#shop {width:570px;}
+/* ----== /Page Expansion ==---- */
+
+/* ----== Site Layout ==---- */
+/* Menu Left */
+body.menuleft div#navColumn {float:left;}
+body.menuleft div#mainColumn {float:right;}
+
+/* Menu Right */
+body.menuright div#navColumn {float:right;}
+body.menuright div#mainColumn {float:left;}
+
+/* ----== /Site Layout ==---- */
+
+/* ----== Mr Site Latest Gallery ==---- */
+div.latestGallery {}
+div.latestGallery a {color:#535353;}
+/* ----== /Mr Site Latest Gallery ==---- */
+
+/* ----== Twitter ==---- */
+p.profileLink a {color: #fff;}
+ul#twitter_update_list li a {color: #535353;}
+ul#twitter_update_list li span a {color: #535353;}
+/* ----==/Twitter ==---- */
+
+/* ----== Form Creator ==---- */
+form.myform input, 
+form.myform textarea, 
+input.input_captcha {}
+	form.myform legend, 
+	form.myform label {font-weight:bold;}
+span.description {}
+input.submit_myform {}
+/* ----== /Form Creator ==---- */
+
+
+
+/* ----== Contemporary Layout ==---- */
+/* Side Division */
+div#shop div.float-left {float:left; width:460px; display:inline-block; position:relative;}
+div#shop div.float-right {float:right; width:100px; display:inline-block; position:relative;}
+
+/* Standard Online Shop (Contemporary) */
+div.standardCart.float-left {float:right; margin:0px 10px 10px 0px; display:inline-block; position:relative;}
+div.standardCart.float-right {float:left; width:460px; margin:0px; display:inline-block; position:relative;}
+
+div#shop_item.noimages div.standardCart.float-left {width:570px; margin:0px 0px 10px 0px; display:inline-block; position:relative;}
+
+/* Pro Online Shop (Contemporary) */
+div.proCart.float-left {float:left; width:460px; margin:0px; display:inline-block; position:relative;}
+div.proCart.float-right {float:right; margin:0px 0px 10px 10px; display:inline-block; position:relative;}
+/* ----== /Contemporary Layout ==---- */
+
+
+/* ----==  User styles ==---- */
+#shop {border-bottom:1px solid #dad5b1;}
+#shop .float-left .item_options .quantity select,
+#shop .float-left .item_options .options select,
+#shop .float-left .item_options .colour input {border-color:#dad5b1;}
+#shop .float-left .item_options {background:#ece9d4; border-color:#dad5b1;}
+
+div#shop {border-bottom:0px;}
+
+/* ----== Winter Release Widgets ==---- */	
+
+/* ----== Mailing List ==---- */	
+input.mailinglistemail{border:1px #eaeaea solid; background:#fff; color:#000;}
+input.mailinglistButton{background:#eaeaea; color:#333;}
+input.mailinglistButton.hover_button{background:#aca677; color:#fff;}
+/* ----== Mailing List ==---- */	
+
+/* ----== Mini Cart ==---- */	
+a.minicart_checkoutbutton {text-decoration:none;background:#eaeaea; color:#333; border:0px;}
+a.minicart_checkoutbutton:hover {background:#aca677; color:#fff;}
+a.minicart_checkoutbutton {height:19px; overflow:hidden; padding:17px 40px 15px 20px; text-shadow:#ffffff 0px 1px 0px;background:url(../images/proceed_to_checkout.gif) transparent no-repeat top right; color:#202020;display:block; position:relative; cursor:pointer; float:right; clear:right; text-decoration:none; font-size:12px; line-height:15px; letter-spacing:-0.1pt; word-spacing:0pt; font-style:normal; text-transform:none; text-decoration:none;}
+a.minicart_checkoutbutton:hover {background:url(../images/proceed_to_checkout.gif) transparent no-repeat bottom right; color:#202020;}
+/* ----== Mini Cart ==---- */
+
+/* ----== Google/Froogle Search ==---- */	
+input#searchText.GoogleSearch {border:1px #eaeaea solid; background:#fff ;}
+input#searchText.FroogleSearch {border:1px #eaeaea solid; background:#fff url(http://mrsite.co.uk/web_assets/images/icons/search/froogle_custom_search.jpg) no-repeat 0 0;}
+
+input.searchResultsButton {background:#eaeaea; color:#333;}
+input.searchResultsButton.hover_button {background:#aca677; color:#fff;}
+
+/* ----== Google/Froogle Search ==---- */

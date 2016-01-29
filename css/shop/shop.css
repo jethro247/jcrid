@@ -1,0 +1,189 @@
+/* ----== Mr Site Online Shop (Contemporary) ==---- */
+/* Shop V3 */
+div#shop, 
+div#shop_title, 
+div.item_name, 
+div.item_price, 
+div#shop_extra, 
+div.item_postage, 
+div#shop_extra, 
+div#shop_item, 
+div#large, 
+div#large img,
+div#small-left, 
+div#small-right, 
+div.item_desc, 
+div.item_options, 
+div.item_buy, 
+div.item_buy input 
+	{
+		padding:0; 
+		margin:0;
+	}
+/* Shop Containers */
+div#shop 
+	{
+		margin:20px 0 20px 0; 
+		padding-top:20px; 
+		display:block; 
+		border-top:dotted 1px #999;
+	}
+div#shop_title 
+	{
+		width:100%;
+	}
+div#shop_item 
+	{
+		padding:0; 
+		margin:0 0 10px 0;
+		display:inline-block; 
+		position:relative;
+	}
+div#shop_extra 
+	{
+		font-size:11px; 
+		margin:0 0 5px 0;
+	}
+	/* Item Title Information */
+	div.item_name 
+		{
+			float:left; 
+			width:300px; 
+			font-size:14px; 
+			font-weight:bold; 
+			display:block; 
+			padding:3px 0 5px 0;
+		}
+	div.item_price, 
+	div.item_stock 
+		{
+			float:right; 
+			text-align:right; 
+			display:block; 
+			padding:3px 0 5px 0;
+		}
+	div.item_stock 
+		{
+			font-size:12px;
+		}
+	div.item_price 
+		{
+			width:100px; 
+			font-size:16px; 
+		}
+	div.item_postage 
+		{
+			text-align:right; 
+			border-top:1px dotted #cccccc; 
+			padding-top:10px;
+		}
+	/* Image Setup */
+	div#large 
+		{
+			overflow:hidden; 
+			width:100px;
+		}
+		div#small-left, 
+		div#small-right 
+			{
+				float:left; 
+				width:47px; 
+				overflow:hidden;
+			}
+			div#small-left 
+				{
+					margin:5px 5px 0 0;
+				}
+			div#small-right 
+				{
+					margin:5px 0 0 0;
+				}
+				div#large img, 
+				div#small-left img, 
+				div#small-right img 
+					{
+						width:100%; 
+						display:block;
+					}
+	/* Item Description */
+	div.item_desc 
+		{
+			margin:0; 
+			display:inline-block;
+		}
+	/* Item Options */
+	div.item_options 
+		{
+			line-height:15px; 
+			word-spacing:0pt; 
+			letter-spacing:0pt; 
+			margin:5px 0 10px 0; 
+			padding:5px; 
+			border-top:1px solid; 
+			font-size:11px; 
+			height:20px; 
+			overflow:hidden; 
+			display:block;
+		}
+		div.item_options input, 
+		div.item_options select, 
+		div.item_options input 
+			{
+				border:1px solid; 
+				font-size:11px;
+			}
+		div.item_options input:focus, 
+		div.item_options select:focus, 
+		div.item_options input:focus 
+			{
+				background-color:#FFFFCC;
+			}
+		div.item_options select 
+			{
+				cursor:default;
+			}
+		div.item_options input 
+			{
+				cursor:text;
+			}
+		div.quantity, 
+		div.options 
+			{
+				float:left; 
+				margin:0 10px 0 0;
+			}
+			div.quantity select 
+				{
+					width:35px;
+				}
+			div.options select 
+				{
+					width:88px;
+				}
+			div.colour input 
+				{
+					width:88px;
+				}
+			div.item_buy_text 
+				{
+					float:right; 
+					margin:4px 10px 0 0;
+				}
+		div.colour 
+			{
+				float:left; 
+				margin:0;
+			}
+		div.quantity, 
+		div.options, 
+		div.colour 
+			{
+				display:block;
+			}
+		div.item_buy 
+			{
+				float:right; 
+				clear:right;
+			}
+/* ----== /Mr Site Online Shop (Contemporary) ==---- */
+
